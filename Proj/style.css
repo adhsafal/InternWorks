@@ -56,3 +56,11 @@ body {
 .item:hover {
 	color: red;
 }
+
+.section-features .pages {
+	display: none;
+}
+
+.section-features .pages.is-active {
+	display: flex;
+}
