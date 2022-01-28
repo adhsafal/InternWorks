@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap");
+
 * {
 	padding: 0;
 	margin: 0;
@@ -17,17 +18,27 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
 }
 
 .navbar {
 	min-height: 100px;
-	/* position: fixed; */
 	width: 100%;
 	line-height: 21px;
+	position: fixed;
+	background: transparent;
+	z-index: 1;
+}
+
+.navbar.scrolled {
+	background: white;
 }
 
 .nav-link a {
-	color: white;
+	color: white !important;
 }
 
 /* .container {
@@ -66,11 +77,11 @@
 	line-height: 80px;
 }
 
-.header-contents {
+/* .header-contents {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-}
+} */
 
 .header-contents h1 {
 	font-family: "poppins", sans-serif;
@@ -120,6 +131,8 @@
 
 .section-services {
 	padding-bottom: 100px;
+	position: relative;
+	top: 100vh;
 }
 
 .section-contents h2,
@@ -155,6 +168,13 @@ p {
 	padding-top: 100px;
 	padding-bottom: 100px;
 	text-align: center;
+	position: relative;
+	top: 100vh;
+}
+
+.section_expert {
+	position: fixed;
+	top: 100vh;
 }
 
 .features h3 {
@@ -246,6 +266,7 @@ p {
 	display: flex;
 	width: 100%;
 }
+
 .contents h2 {
 	font-size: 36px;
 	font-family: "poppins", sans-serif;
@@ -264,8 +285,13 @@ p {
 	font-family: "Lora", serif;
 }
 
-.listings {
-	list-style-type: none;
+.progress {
+	height: 5px;
+}
+
+.contentlists {
+	padding: 0, 15px;
+	justify-content: end;
 }
 
 .titles,
@@ -275,28 +301,30 @@ p {
 	line-height: 12px;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding: 0;
-	margin: 0;
 }
-
-.listings li .titles {
+.tv {
+	margin-bottom: 17px;
+	/* border: 2px solid gold; */
 	text-align: start;
+	justify-content: space-evenly;
 }
-
-.listings .values {
-	text-align: end;
-}
-
 .values {
-	text-align: right;
+	float: right;
+	margin-top: 7px !important;
 }
 
+.lists {
+	margin-bottom: 17px;
+	margin-right: 35px;
+}
 .section1 {
 	background-color: rgb(245, 175, 0);
 	line-height: 15em;
 	padding-bottom: 75px;
 	padding-top: 75px;
 	display: flex;
+	position: relative;
+	top: 100vh;
 }
 
 .innovative h3 {
@@ -332,16 +360,32 @@ p {
 .section_expert {
 	padding-top: 75px;
 	padding-bottom: 75px;
+	position: relative;
+	top: 100vh;
 }
 
 .container_clients {
 	padding-top: 100px;
 	background-color: #f8f8f8;
 	padding-bottom: 100px;
+	position: relative;
+	top: 100vh;
 }
 
 .clients {
 	margin-bottom: 70px;
+}
+
+.textname {
+	padding-left: 30px;
+}
+
+.client_name h4 {
+	font-size: 14px !important;
+	line-height: 14px;
+	font-family: "poppins", sans-serif;
+	text-align: start;
+	font-weight: 700;
 }
 
 .clientone,
@@ -350,8 +394,7 @@ p {
 	text-align: start;
 }
 
-.clientone,
-.clienttwo p {
+.client_text p {
 	font-family: "Lora", serif;
 	font-size: 20px;
 	font-style: italic;
@@ -359,12 +402,18 @@ p {
 	font-weight: 400;
 	text-align: start;
 	color: rgb(153, 153, 153);
+	margin: 0 0 29px;
 }
 
 .maps {
 	background-color: #999;
 	padding-bottom: 100px;
 	padding-top: 100px;
+}
+
+.section2 {
+	position: relative;
+	top: 100vh;
 }
 
 .maps h2 {
@@ -377,8 +426,9 @@ p {
 }
 
 .about {
-	padding-bottom: 80px;
 	padding-top: 80px;
+	position: relative;
+	top: 100vh;
 }
 
 .about i {
@@ -394,7 +444,7 @@ p {
 	font-weight: normal;
 	text-align: center;
 	font-family: "poppins", sans-serif;
-	margin: 0, 0, 16px;
+	margin: 0 0 16px;
 }
 
 .about p {
@@ -409,6 +459,8 @@ p {
 footer {
 	padding-top: 30px;
 	padding-bottom: 30px;
+	position: relative;
+	top: 100vh;
 }
 
 footer span {

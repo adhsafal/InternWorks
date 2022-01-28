@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		<div class="main">
-			<nav class="navbar sticky-top navbar-expand-lg">
+			<nav class="navbar navbar-expand-lg">
 				<div class="container">
 					<a class="navbar-brand" href="#">
 						<img src="images/logo-light.png" alt="logo" />
@@ -211,8 +211,8 @@
 		<section class="section">
 			<div class="section_expert">
 				<div class="container">
-					<div class="row d-flex">
-						<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-5">
 							<div class="contents">
 								<h2>We are expert in this field since almost 20 years.</h2>
 								<p>
@@ -223,26 +223,72 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 offset-md-1">
 							<div class="contentlists">
-								<ul class="listings">
-									<li>
+								<div class="lists">
+									<div class="tv">
 										<span class="titles"> buildings</span>
 										<span class="values">85%</span>
-									</li>
-									<li>
+									</div>
+									<div class="progress">
+										<div
+											class="progress-bar bg-warning"
+											role="progressbar"
+											style="width: 85%"
+											aria-valuenow="75"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+								</div>
+								<div class="lists">
+									<div class="tv">
 										<span class="titles"> architecture</span>
 										<span class="values">60%</span>
-									</li>
-									<li>
-										<span class="titles"> constructions</span>
-										<span class="values">70%</span>
-									</li>
-									<li>
+									</div>
+									<div class="progress">
+										<div
+											class="progress-bar bg-warning"
+											role="progressbar"
+											style="width: 60%"
+											aria-valuenow="75"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+								</div>
+								<div class="lists">
+									<div class="tv">
 										<span class="titles"> planning</span>
 										<span class="values">40%</span>
-									</li>
-								</ul>
+									</div>
+									<div class="progress">
+										<div
+											class="progress-bar bg-warning"
+											role="progressbar"
+											style="width: 40%"
+											aria-valuenow="75"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+								</div>
+								<div class="lists">
+									<div class="tv">
+										<span class="titles"> constructions</span>
+										<span class="values">70%</span>
+									</div>
+									<div class="progress">
+										<div
+											class="progress-bar bg-warning"
+											role="progressbar"
+											style="width: 70%"
+											aria-valuenow="75"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -281,33 +327,48 @@
 						<div class="col-md-6">
 							<div class="clientone">
 								<div class="client_icon">
-									<img src="images/7.jpg" alt="client" />
+									<img
+										src="images/7.jpg"
+										height="70px"
+										width="70px"
+										alt="client"
+									/>
 								</div>
-								<div class="client_text">
-									<p>
-										“It’s just brilliant. I will recommend Cobuild to everyone I
-										know! I’m really glad to these guys got Cobuild out there.”
-									</p>
-								</div>
-								<div class="client_name">
-									<h4>Gene Stevens</h4>
+								<div class="textname">
+									<div class="client_text">
+										<p>
+											“It’s just brilliant. I will recommend Cobuild to everyone
+											I know! I’m really glad to these guys got Cobuild out
+											there.”
+										</p>
+									</div>
+									<div class="client_name">
+										<h4>Gene Stevens</h4>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-6">
-							<div class="clienttwo">
+							<div class="clientone">
 								<div class="client_icon">
-									<img src="images/8.jpg" alt="client" />
+									<img
+										src="images/8.jpg"
+										height="70px"
+										width="70px"
+										alt="client"
+									/>
 								</div>
-								<div class="client_text">
-									<p>
-										“We are so excited to launch our new company, By using
-										Cobuild it has a great features, I think you are all about
-										to make me happy.”
-									</p>
-								</div>
-								<div class="client_name">
-									<h4>Gene Stevens</h4>
+								<div class="textname">
+									<div class="client_text">
+										<p>
+											“We are so excited to launch our new company, By using
+											Cobuild it has a great features, I think you are all about
+											to make me happy.”
+										</p>
+									</div>
+									<div class="client_name">
+										<h4>Gene Stevens</h4>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -315,7 +376,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section">
+		<section class="section2">
 			<div class="maps">
 				<div class="container">
 					<div class="row">
@@ -351,8 +412,9 @@
 				</div>
 			</div>
 		</section>
-		<hr />
+
 		<footer class="section">
+			<hr />
 			<div class="container">
 				<div class="row">
 					<div class="footer_content">
@@ -373,5 +435,17 @@
 		</footer>
 
 		<script src="js/bootstrap.min.js"></script>
+		<script>
+			// $(window).scroll(function () {
+			// 	$("nav").toggleClass("scrolled", $(this).scrollTop() > 150);
+			// });
+
+			$(function () {
+				$(document).scroll(function () {
+					var $nav = $(".navbar");
+					$nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+				});
+			});
+		</script>
 	</body>
 </html>
