@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		<div class="main">
-			<nav class="navbar navbar-expand-lg">
+			<nav class="navbar navbar-expand-lg fixed-top bgcolor">
 				<div class="container">
 					<a class="navbar-brand" href="#">
 						<img src="images/logo-light.png" alt="logo" />
@@ -170,17 +170,17 @@
 							<div class="featured-row">
 								<div class="col-md-4">
 									<div class="image-items">
-										<a href=""><img src="images/1.jpg" alt="One" /></a>
+										<img class="hover-img" src="images/1.jpg" alt="One" />
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="image-items">
-										<a href=""><img src="images/2.jpg" alt="One" /></a>
+										<img class="hover-img" src="images/2.jpg" alt="One" />
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="image-items">
-										<a href=""><img src="images/3.jpg" alt="One" /></a>
+										<img class="hover-img" src="images/3.jpg" alt="One" />
 									</div>
 								</div>
 							</div>
@@ -189,17 +189,17 @@
 							<div class="featured-row d-flex">
 								<div class="col-md-4">
 									<div class="image-items">
-										<a href=""><img src="images/4.jpg" alt="One" /></a>
+										<img class="hover-img" src="images/4.jpg" alt="One" />
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="image-items">
-										<a href=""><img src="images/5.jpg" alt="One" /></a>
+										<img class="hover-img" src="images/5.jpg" alt="One" />
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="image-items">
-										<a href=""><img src="images/6.jpg" alt="One" /></a>
+										<img class="hover-img" src="images/6.jpg" alt="One" />
 									</div>
 								</div>
 							</div>
@@ -414,7 +414,6 @@
 		</section>
 
 		<footer class="section">
-			<hr />
 			<div class="container">
 				<div class="row">
 					<div class="footer_content">
@@ -436,15 +435,8 @@
 
 		<script src="js/bootstrap.min.js"></script>
 		<script>
-			// $(window).scroll(function () {
-			// 	$("nav").toggleClass("scrolled", $(this).scrollTop() > 150);
-			// });
-
-			$(function () {
-				$(document).scroll(function () {
-					var $nav = $(".navbar");
-					$nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-				});
+			$(window).scroll(function () {
+				$("nav").toggleClass("scrolled", $(this).scrollTop() > 150);
 			});
 		</script>
 	</body>

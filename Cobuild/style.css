@@ -28,24 +28,14 @@
 	min-height: 100px;
 	width: 100%;
 	line-height: 21px;
-	position: fixed;
+	/* position: fixed; */
 	background: transparent;
 	z-index: 1;
 }
 
-.navbar.scrolled {
-	background: white;
+.bgcolor.scrolled {
+	background-color: white !important;
 }
-
-.nav-link a {
-	color: white !important;
-}
-
-/* .container {
-	padding-left: 15px;
-	padding-right: 15px;
-}
- */
 
 .navbar-toggler {
 	border: 1px solid rgb(245, 175, 0);
@@ -68,7 +58,7 @@
 }
 
 .page-header {
-	margin-top: 3.5vh;
+	margin-top: 150px;
 }
 
 .page-header .container {
@@ -76,12 +66,6 @@
 	padding-bottom: 80px;
 	line-height: 80px;
 }
-
-/* .header-contents {
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-} */
 
 .header-contents h1 {
 	font-family: "poppins", sans-serif;
@@ -98,13 +82,14 @@
 	text-align: center;
 	color: white;
 	line-height: 28px;
+	margin-bottom: 53px;
 }
 
 .header-contents button {
 	font-family: "poppins", sans-serif;
 	font-size: 12px;
 	line-height: 50px;
-	vertical-align: middle;
+	vertical-align: top;
 	font-weight: 500;
 	text-transform: uppercase;
 	text-align: center;
@@ -184,6 +169,7 @@ p {
 	font-weight: 400;
 	text-transform: capitalize;
 	text-align: center;
+	margin-bottom: 13px;
 }
 
 .features p {
@@ -254,12 +240,13 @@ p {
 	color: rgb(245, 175, 0);
 }
 
-.image-items {
-	margin: 10px 10px;
-}
-
-.image-items a:hover {
-	color: rgb(245, 175, 0);
+.image-items img {
+	margin-bottom: 30px;
+	padding: 0 15px;
+	max-width: 100%;
+	height: auto;
+	transition: all ease-in-out 5s;
+	opacity: 1;
 }
 
 .featured-row {
@@ -426,8 +413,9 @@ p {
 }
 
 .about {
-	padding-top: 80px;
+	padding: 100px 0 96px;
 	position: relative;
+	border-bottom: 1px solid rgb(153, 153, 153);
 	top: 100vh;
 }
 
@@ -454,11 +442,11 @@ p {
 	text-align: center;
 	font-family: "Lora", serif;
 	color: rgb(153, 153, 153);
+	margin: 0;
 }
 
 footer {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding: 30px 0;
 	position: relative;
 	top: 100vh;
 }
@@ -474,4 +462,13 @@ footer span {
 
 .footer_content {
 	display: flex;
+}
+
+.footer_content i {
+	padding-right: 20px;
+	color: rgb(153, 153, 153);
+}
+
+.footer_content i:hover {
+	color: rgb(245, 175, 0);
 }
