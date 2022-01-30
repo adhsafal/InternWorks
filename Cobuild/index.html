@@ -30,7 +30,7 @@
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-icon"></span>
+						<span><i class="far fa-bars"></i></span>
 					</button>
 					<div
 						class="collapse navbar-collapse justify-content-end"
@@ -165,41 +165,75 @@
 							</ul>
 						</div>
 					</div>
-					<div class="container">
-						<div class="row">
-							<div class="featured-row">
-								<div class="col-md-4">
-									<div class="image-items">
+					<div class="row">
+						<div class="featured-row d-flex">
+							<div class="col-md-4">
+								<div class="image-items">
+									<div class="imagewrap">
 										<img class="hover-img" src="images/1.jpg" alt="One" />
+										<div class="image__title">
+											<i class="fal fa-plus"></i>
+											<a href=""><h6>Tower Building</h6></a>
+										</div>
 									</div>
 								</div>
-								<div class="col-md-4">
-									<div class="image-items">
+							</div>
+							<div class="col-md-4">
+								<div class="image-items">
+									<div class="imagewrap">
 										<img class="hover-img" src="images/2.jpg" alt="One" />
+										<div class="image__title">
+											<i class="fal fa-plus"></i>
+											<a href=""><h6>Renovation</h6></a>
+										</div>
 									</div>
 								</div>
-								<div class="col-md-4">
-									<div class="image-items">
+							</div>
+							<div class="col-md-4">
+								<div class="image-items">
+									<div class="imagewrap">
 										<img class="hover-img" src="images/3.jpg" alt="One" />
+										<div class="image__title">
+											<i class="fal fa-plus"></i>
+											<a href=""><h6>Hospital Building</h6></a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="featured-row d-flex">
-								<div class="col-md-4">
-									<div class="image-items">
+					</div>
+					<div class="row">
+						<div class="featured-row d-inline-flex">
+							<div class="col-md-4">
+								<div class="image-items">
+									<div class="imagewrap">
 										<img class="hover-img" src="images/4.jpg" alt="One" />
+										<div class="image__title">
+											<i class="fal fa-plus"></i>
+											<a href=""><h6>Tower Building</h6></a>
+										</div>
 									</div>
 								</div>
-								<div class="col-md-4">
-									<div class="image-items">
+							</div>
+							<div class="col-md-4">
+								<div class="image-items">
+									<div class="imagewrap">
 										<img class="hover-img" src="images/5.jpg" alt="One" />
+										<div class="image__title">
+											<i class="fal fa-plus"></i>
+											<a href=""><h6>Tower Renovation</h6></a>
+										</div>
 									</div>
 								</div>
-								<div class="col-md-4">
-									<div class="image-items">
+							</div>
+							<div class="col-md-4">
+								<div class="image-items">
+									<div class="imagewrap">
 										<img class="hover-img" src="images/6.jpg" alt="One" />
+										<div class="image__title">
+											<i class="fal fa-plus"></i>
+											<a href=""><h6>Planning</h6></a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -412,7 +446,6 @@
 				</div>
 			</div>
 		</section>
-
 		<footer class="section">
 			<div class="container">
 				<div class="row">
@@ -434,10 +467,6 @@
 		</footer>
 
 		<script src="js/bootstrap.min.js"></script>
-		<script>
-			$(window).scroll(function () {
-				$("nav").toggleClass("scrolled", $(this).scrollTop() > 150);
-			});
-		</script>
+		<script src="main.js"></script>
 	</body>
 </html>

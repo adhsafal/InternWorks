@@ -24,6 +24,11 @@
 	bottom: 0;
 }
 
+.container {
+	padding: 0 15px;
+	margin: 0 89.5px;
+}
+
 .navbar {
 	min-height: 100px;
 	width: 100%;
@@ -31,10 +36,20 @@
 	/* position: fixed; */
 	background: transparent;
 	z-index: 1;
+	/* border: 2px solid red; */
 }
 
-.bgcolor.scrolled {
-	background-color: white !important;
+.scrolling-active {
+	background-color: #fff;
+}
+
+.scrolling-active .navbar-nav .nav-link {
+	color: black;
+	font-weight: 400;
+}
+
+.nav-item {
+	padding-right: 15px;
 }
 
 .navbar-toggler {
@@ -58,7 +73,7 @@
 }
 
 .page-header {
-	margin-top: 150px;
+	margin-top: 175px;
 }
 
 .page-header .container {
@@ -74,6 +89,7 @@
 	text-align: center;
 	font-weight: 400;
 	color: white;
+	margin-bottom: 27px;
 }
 
 .header-contents p {
@@ -144,7 +160,6 @@ p {
 
 .row {
 	justify-content: center;
-	align-items: center;
 	text-align: center;
 }
 
@@ -240,18 +255,70 @@ p {
 	color: rgb(245, 175, 0);
 }
 
-.image-items img {
-	margin-bottom: 30px;
+.featured-row {
+	width: 100%;
+	padding: 0;
+}
+
+.image-items {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	box-sizing: border-box;
 	padding: 0 15px;
+	margin-bottom: 30px;
+}
+
+.imagewrap {
+	background-color: rgb(245, 175, 0);
+}
+
+.hover-img {
 	max-width: 100%;
 	height: auto;
-	transition: all ease-in-out 5s;
+}
+
+.image__title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+
+.hover-img:hover {
+	/* overflow: hidden; */
+	transform: scale(1.1);
+	transition: 0.7s;
+	opacity: 0.1;
+}
+
+.hover-img:hover ~ .image__title {
 	opacity: 1;
 }
 
-.featured-row {
-	display: flex;
-	width: 100%;
+.hover-img:hover ~ .image__title:hover ~ .image__title a h6 {
+	color: black;
+}
+
+.image__title i {
+	color: white;
+	font-size: 30px;
+	margin-bottom: 17px;
+}
+
+.image__title a {
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: 400;
+	font-family: "poppins", sans-serif;
+	margin: 0;
+}
+
+.image__title a h6:hover {
+	color: black;
 }
 
 .contents h2 {
@@ -301,7 +368,7 @@ p {
 }
 
 .lists {
-	margin-bottom: 17px;
+	margin-bottom: 35px;
 	margin-right: 35px;
 }
 .section1 {
