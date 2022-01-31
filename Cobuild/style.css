@@ -209,7 +209,7 @@ p {
 	text-align: center;
 }
 
-.featured,
+.featured h2,
 .clients h2 {
 	font-family: "Poppins", sans-serif;
 	font-size: 36px;
@@ -220,7 +220,7 @@ p {
 	margin-bottom: 27px;
 }
 
-.featured,
+.featured p,
 .clients p {
 	color: rgb(153, 153, 153);
 	font-size: 16px;
