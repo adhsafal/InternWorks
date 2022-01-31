@@ -262,9 +262,7 @@ p {
 
 .image-items {
 	position: relative;
-	text-align: center;
 	overflow: hidden;
-	box-sizing: border-box;
 	padding: 0 15px;
 	margin-bottom: 30px;
 }
@@ -273,9 +271,12 @@ p {
 	background-color: rgb(245, 175, 0);
 }
 
+.col-md-4 {
+	border: 2px solid red;
+}
+
 .hover-img {
 	max-width: 100%;
-	height: auto;
 }
 
 .image__title {
@@ -286,19 +287,15 @@ p {
 	opacity: 0;
 }
 
-.hover-img:hover {
+.imagewrap:hover img {
 	/* overflow: hidden; */
 	transform: scale(1.1);
 	transition: 0.7s;
 	opacity: 0.1;
 }
 
-.hover-img:hover ~ .image__title {
+.imagewrap:hover .image__title {
 	opacity: 1;
-}
-
-.hover-img:hover ~ .image__title:hover ~ .image__title a h6 {
-	color: black;
 }
 
 .image__title i {
@@ -317,7 +314,7 @@ p {
 	margin: 0;
 }
 
-.image__title a h6:hover {
+.image__title a:hover {
 	color: black;
 }
 

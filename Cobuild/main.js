@@ -6,10 +6,6 @@ window.addEventListener("scroll", function () {
     let header = document.querySelector("nav");
     let windowPosition = window.scrollY > 50;
     header.classList.toggle("scrolling-active", windowPosition);
-    if (windowPosition == true) {
-        $(".nav img").attr("src", "images/logo-dark.png");
-    }
-    else {
-        $(".nav img").attr("src", "images/logo-light.png");
-    }
+    let logo = document.querySelector("img")
+    windowPosition ? logo.src = ("images/logo-dark.png") : logo.src = ("images/logo-light.png");
 });
