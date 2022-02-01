@@ -6,17 +6,22 @@
 }
 
 .container {
+	margin-left: auto;
+	margin-right: auto;
 	padding: 0 15px;
-	margin: 0 89.5px;
 }
 
 .navbar {
 	min-height: 100px;
 	width: 100%;
-	line-height: 21px;
 	position: fixed;
 	background: transparent;
 	z-index: 1;
+}
+
+.nav.navbar.navbar-expand-lg {
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 .scrolling-active {
@@ -30,7 +35,7 @@
 }
 
 .nav-item {
-	padding-right: 15px;
+	padding-right: 18px;
 }
 
 .navbar-toggler {
@@ -39,9 +44,9 @@
 
 .navbar button {
 	color: rgb(245, 175, 0);
-	position: absolute;
+	/* position: absolute;
 	right: 0;
-	margin: 9px 10px;
+	margin: 9px 10px; */
 }
 
 .canvas_nav {
@@ -265,18 +270,10 @@ p {
 	overflow: hidden;
 	padding: 0 15px;
 	margin-bottom: 30px;
+	background-color: rgb(245, 175, 0);
 }
 
 .imagewrap {
-	background-color: rgb(245, 175, 0);
-	background-size: cover;
-}
-
-.hover-img {
-	size: cover;
-}
-
-.image__title {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -284,14 +281,13 @@ p {
 	opacity: 0;
 }
 
-.imagewrap:hover img {
-	/* overflow: hidden; */
+.image-items:hover img {
 	transform: scale(1.1);
 	transition: 0.7s;
 	opacity: 0.1;
 }
 
-.imagewrap:hover .image__title {
+.image-items:hover .imagewrap {
 	opacity: 1;
 }
 
@@ -532,9 +528,16 @@ p {
 	left: 0;
 } */
 
-@media only screen and (min-width: 360px) and (max-width: 767px) {
+@media only screen and (max-width: 992x) {
 	.navbar .navbar-nav {
 		display: none;
+	}
+
+	.navbar img {
+		position: absolute;
+		padding-left: 20px;
+		left: 0;
+		margin-top: 32px;
 	}
 
 	.container {
@@ -676,5 +679,12 @@ p {
 	.offcanvas {
 		display: none;
 		background-color: none;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1050px) {
+	.section {
+		padding: 0;
+		margin-right: 0;
 	}
 }
