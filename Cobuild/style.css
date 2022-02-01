@@ -1,27 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 * {
 	padding: 0;
 	margin: 0;
-}
-
-.main {
-	background-image: linear-gradient(
-			rgba(51, 51, 51, 0.6),
-			rgba(51, 51, 51, 0.6)
-		),
-		url("images/main.jpg");
-	background-color: black;
-	height: 100vh !important;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: absolute;
-	right: 0;
-	left: 0;
-	bottom: 0;
 }
 
 .container {
@@ -33,14 +14,14 @@
 	min-height: 100px;
 	width: 100%;
 	line-height: 21px;
-	/* position: fixed; */
+	position: fixed;
 	background: transparent;
 	z-index: 1;
-	/* border: 2px solid red; */
 }
 
 .scrolling-active {
 	background-color: #fff;
+	box-shadow: 0 1px 3px rgb(0 0 0 / 9%);
 }
 
 .scrolling-active .navbar-nav .nav-link {
@@ -60,7 +41,12 @@
 	color: rgb(245, 175, 0);
 }
 
-.navbar-nav .nav-link {
+.canvas_nav {
+	list-style-type: none;
+}
+
+.navbar-nav .nav-link,
+.canvas_nav .nav-link {
 	font-family: "poppins", sans-serif;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -68,18 +54,35 @@
 	font-weight: 500;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
+.navbar-nav .nav-item .nav-link:hover,
+.canvas_nav .nav-link:hover {
 	color: rgb(245, 175, 0);
 }
 
-.page-header {
-	margin-top: 175px;
+.offcanvas {
+	background-color: rgba(51, 51, 51, 1);
+	width: auto;
 }
 
-.page-header .container {
+.banner {
+	background-image: linear-gradient(
+			rgba(51, 51, 51, 0.6),
+			rgba(51, 51, 51, 0.6)
+		),
+		url("images/main.jpg");
+	background-color: black;
+	height: 100vh !important;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
 	padding-top: 80px;
-	padding-bottom: 80px;
-	line-height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	text-align: center;
 }
 
 .header-contents h1 {
@@ -104,16 +107,10 @@
 .header-contents button {
 	font-family: "poppins", sans-serif;
 	font-size: 12px;
-	line-height: 50px;
-	vertical-align: top;
 	font-weight: 500;
 	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: normal;
-	justify-content: center;
 	background-color: rgb(245, 175, 0);
 	color: white;
-	line-height: 50px;
 	width: 170px;
 	height: 50px;
 	border: 2px solid rgb(245, 175, 0);
@@ -126,14 +123,13 @@
 }
 
 .section-contents {
+	width: 100%;
 	padding-top: 100px;
 	margin-bottom: 70px !important;
 }
 
 .section-services {
 	padding-bottom: 100px;
-	position: relative;
-	top: 100vh;
 }
 
 .section-contents h2,
@@ -163,18 +159,11 @@ p {
 	text-align: center;
 }
 
-.section-featured {
+.sec {
 	background-color: #f8f8f8;
 	padding-top: 100px;
 	padding-bottom: 100px;
 	text-align: center;
-	position: relative;
-	top: 100vh;
-}
-
-.section_expert {
-	position: fixed;
-	top: 100vh;
 }
 
 .features h3 {
@@ -370,8 +359,6 @@ p {
 	padding-bottom: 75px;
 	padding-top: 75px;
 	display: flex;
-	position: relative;
-	top: 100vh;
 }
 
 .innovative h3 {
@@ -407,16 +394,14 @@ p {
 .section_expert {
 	padding-top: 75px;
 	padding-bottom: 75px;
-	position: relative;
-	top: 100vh;
+}
+
+.cli {
+	background-color: #f8f8f8;
 }
 
 .container_clients {
-	padding-top: 100px;
-	background-color: #f8f8f8;
-	padding-bottom: 100px;
-	position: relative;
-	top: 100vh;
+	padding: 100px 0;
 }
 
 .clients {
@@ -428,7 +413,7 @@ p {
 }
 
 .client_name h4 {
-	font-size: 14px !important;
+	font-size: 14px;
 	line-height: 14px;
 	font-family: "poppins", sans-serif;
 	text-align: start;
@@ -452,15 +437,12 @@ p {
 	margin: 0 0 29px;
 }
 
-.maps {
+.map {
 	background-color: #999;
-	padding-bottom: 100px;
-	padding-top: 100px;
 }
 
-.section2 {
-	position: relative;
-	top: 100vh;
+.maps {
+	padding: 100px 0;
 }
 
 .maps h2 {
@@ -474,9 +456,6 @@ p {
 
 .about {
 	padding: 100px 0 96px;
-	position: relative;
-	border-bottom: 1px solid rgb(153, 153, 153);
-	top: 100vh;
 }
 
 .about i {
@@ -505,30 +484,185 @@ p {
 	margin: 0;
 }
 
-footer {
+.footer {
+	border-top: 1px solid rgb(153, 153, 153);
 	padding: 30px 0;
-	position: relative;
-	top: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-footer span {
+.footer span {
 	font-size: 14px;
 	line-height: 19px;
 	font-weight: 400;
 	padding-top: 30px;
 	color: rgb(153, 153, 153);
-	width: 50%;
+	/* width: 50%; */
 }
 
-.footer_content {
-	display: flex;
+.footer .social_media {
+	display: inline;
+	float: right;
 }
 
-.footer_content i {
+.footer i {
 	padding-right: 20px;
 	color: rgb(153, 153, 153);
 }
 
-.footer_content i:hover {
+.footer i:hover {
 	color: rgb(245, 175, 0);
+}
+
+/* .left_arrow {
+	position: absolute;
+	left: 0;
+} */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	.navbar .navbar-nav {
+		display: none;
+	}
+
+	.container {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.banner {
+		padding: 150px 0 50px 0;
+		height: auto !important;
+	}
+
+	.navbar {
+		padding: 0 10px;
+		margin: 0 -15px 0 0;
+	}
+
+	.header-contents h1 {
+		font-size: 35px;
+		line-height: 40px;
+		margin: 0px 0px 30px;
+	}
+
+	.header-contents p {
+		font-size: 14px;
+		line-height: 24px;
+		padding: 0 10px;
+		margin: 0 0 30px;
+	}
+
+	.section {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+	}
+
+	.section-services {
+		padding: 60px 0;
+	}
+
+	.section-contents {
+		padding: 0;
+		width: 100%;
+		margin: 0 0 70px;
+	}
+
+	.section-contents p {
+		margin: 0;
+	}
+
+	.section-contents h2 {
+		font-size: 30px;
+		line-height: 45px;
+	}
+
+	.features i {
+		margin: 0 0 10px;
+	}
+
+	.sec {
+		padding: 60px 0 70px;
+	}
+
+	.features p {
+		margin: 0 0 20px;
+	}
+
+	.featured h2 {
+		font-size: 30px;
+		line-height: 45px;
+	}
+
+	.section_expert {
+		padding: 60px 0 50px;
+	}
+
+	.contents h2 {
+		font-size: 30px;
+		line-height: 45px;
+	}
+
+	.innovative h3 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.container_clients {
+		padding: 60px 0;
+	}
+
+	.clients h2 {
+		font-size: 30px;
+	}
+
+	.clients p {
+		margin-bottom: 0;
+	}
+
+	.say {
+		display: flex;
+	}
+
+	.about {
+		padding: 60px 0;
+	}
+
+	.about i {
+		margin-bottom: 30px;
+	}
+
+	.address {
+		margin: 0 0 30px;
+	}
+
+	.footer {
+		padding: 30px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navbar .navbar-nav {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.navbar .navbar-nav {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.offcanvas {
+		display: none;
+		background-color: none;
+	}
 }

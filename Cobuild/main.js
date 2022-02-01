@@ -8,10 +8,22 @@ window.addEventListener("scroll", function () {
     header.classList.toggle("scrolling-active", windowPosition);
     let logo = document.querySelector("img")
     windowPosition ? logo.src = ("images/logo-dark.png") : logo.src = ("images/logo-light.png");
-    // if (windowPosition == true) {
-    //     $(".nav img").attr("src", "images/logo-dark.png");
-    // }
-    // else {
-    //     $(".nav img").attr("src", "images/logo-light.png");
-    // }
+
 });
+
+$('.slider').slick({
+    infinite: false,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    prevArrow: '<i class = "fas fa-angle-left  left_arrow"></i>',
+    nextArrow: '<i class = "fas fa-angle-right  right_arrow"></i>',
+});
+
+// var iWidth = window.innerWidth;
+// if (iWidth < 768) {
+//     $('.slider').slick({
+//         slidesToShow: 1
+//     });
+// }
+
+

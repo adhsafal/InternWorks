@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Cobuild web</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="style.css" />
 		<link
@@ -13,10 +13,14 @@
 			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
 			crossorigin="anonymous"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+		/>
 	</head>
 	<body>
 		<!-- Header starts here -->
-		<div class="main">
+		<div class="col-md-12">
 			<nav class="navbar navbar-expand-lg fixed-top bgcolor">
 				<div class="container">
 					<a class="navbar-brand" href="#">
@@ -25,19 +29,34 @@
 					<button
 						class="navbar-toggler"
 						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNav"
-						aria-controls="navbarNav"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
+						 type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
 					>
 						<span><i class="far fa-bars"></i></span>
 					</button>
+					<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">services</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">work</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">skills</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">testimonials</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">map</a>
+							</li>
+						</ul>
 					<div
-						class="collapse navbar-collapse justify-content-end"
-						id="navbarNav"
+						class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
 					>
-						<ul class="navbar-nav">
+						<ul class="canvas_nav">
 							<li class="nav-item">
 								<a class="nav-link" aria-current="page" href="#">home</a>
 							</li>
@@ -61,19 +80,11 @@
 				</div>
 			</nav>
 			<!-- header content starts here -->
-			<header class="page-header">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="header-contents">
-								<h1>We're Building Your Future</h1>
-								<p>
-									Take a step towards the future of construction with Cobuild
-								</p>
-								<button type="button">GET A QUOTE</button>
-							</div>
-						</div>
-					</div>
+			<header class="banner">
+				<div class="header-contents">
+					<h1>We're Building Your Future</h1>
+					<p>Take a step towards the future of construction with Cobuild</p>
+					<button type="button">GET A QUOTE</button>
 				</div>
 			</header>
 		</div>
@@ -82,7 +93,8 @@
 			<div class="section-services">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-8">
+						<div class="col-md-6">
+							
 							<div class="section-contents">
 								<h2>our services</h2>
 								<p>
@@ -141,8 +153,7 @@
 			</div>
 		</section>
 		<!-- featured work starts here -->
-		<section class="section">
-			<div class="section-featured">
+		<section class="section sec">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
@@ -244,7 +255,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
 		</section>
 		<!-- this is progress section -->
 		<section class="section">
@@ -350,7 +360,7 @@
 			</div>
 		</section>
 		<!-- clients message section starts here -->
-		<section class="section">
+		<section class="section cli">
 			<div class="container_clients">
 				<div class="container">
 					<div class="row">
@@ -364,8 +374,55 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-6">
+					<div class="row say">
+						<div class="col-md-6 col-sm-12">
+							<div class="clientone">
+								<div class="client_icon">
+									<img
+										src="images/7.jpg"
+										height="70px"
+										width="70px"
+										alt="client"
+									/>
+								</div>
+								<div class="textname">
+									<div class="client_text">
+										<p>
+											“It’s just brilliant. I will recommend Cobuild to everyone
+											I know! I’m really glad to these guys got Cobuild out
+											there.”
+										</p>
+									</div>
+									<div class="client_name">
+										<h4>Gene Stevens</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-12">
+							<div class="clientone">
+								<div class="client_icon">
+									<img
+										src="images/8.jpg"
+										height="70px"
+										width="70px"
+										alt="client"
+									/>
+								</div>
+								<div class="textname">
+									<div class="client_text">
+										<p>
+											“We are so excited to launch our new company, By using
+											Cobuild it has a great features, I think you are all about
+											to make me happy.”
+										</p>
+									</div>
+									<div class="client_name">
+										<h4>Gene Stevens</h4>
+									</div>
+								</div>
+							</div>
+						</div><div class="col-md-6">
 							<div class="clientone">
 								<div class="client_icon">
 									<img
@@ -413,12 +470,61 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-md-6">
+							<div class="clientone">
+								<div class="client_icon">
+									<img
+										src="images/7.jpg"
+										height="70px"
+										width="70px"
+										alt="client"
+									/>
+								</div>
+								<div class="textname">
+									<div class="client_text">
+										<p>
+											“It's just brilliant. I will recommend Cobuild to everyone
+											I know! I'm really glad to these guys got Cobuild out
+											there.”
+										</p>
+									</div>
+									<div class="client_name">
+										<h4>Gene Stevens</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="clientone">
+								<div class="client_icon">
+									<img
+										src="images/8.jpg"
+										height="70px"
+										width="70px"
+										alt="client"
+									/>
+								</div>
+								<div class="textname">
+									<div class="client_text">
+										<p>
+											“We are so excited to launch our new company, By using
+											Cobuild it has a great features, I think you are all about
+											to make me happy.”
+										</p>
+									</div>
+									<div class="client_name">
+										<h4>Gene Stevens</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- google map section -->
-		<section class="section2">
+		<section class="section map">
 			<div class="maps">
 				<div class="container">
 					<div class="row">
@@ -435,48 +541,58 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4">
+							<div class="address">
 							<i class="far fa-home"></i>
 							<h4>Address</h4>
 							<p>220 Petersham town, Wardell street, Australia PA 6550.</p>
 						</div>
+					</div>
 						<div class="col-md-4">
+							<div class="address">
 							<i class="fad fa-mobile"></i>
 							<h4>Phone</h4>
 							<p>Phone: (04) 491 570 110</p>
 							<p>Fax: +04 642 021 332</p>
 						</div>
+						</div>
 						<div class="col-md-4">
+							<div class="address">
 							<i class="fal fa-envelope"></i>
 							<h4>Email</h4>
 							<p>support@zytheme.com</p>
 							<p>Twitter: @zytheme</p>
 						</div>
 					</div>
+					</div>
 				</div>
 			</div>
 		</section>
 		<!-- footersection starts here -->
-		<footer class="section">
+		<div class="footer">
 			<div class="container">
-				<div class="row">
-					<div class="footer_content">
-						<div class="col-md-6 text-start">
-							<span>© Zytheme 2016, All Rights Reserved.</span>
-						</div>
-						<div class="col-md-6 text-end col-sm-6 text-end">
-							<div class="social_media">
-								<i class="fab fa-facebook-f"></i>
-								<i class="fab fa-twitter"></i>
-								<i class="fal fa-basketball-ball"></i>
-								<i class="fab fa-instagram"></i>
-							</div>
-						</div>
+					<span>© Zytheme 2016, All Rights Reserved.</span>
+					<div class="social_media">
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fal fa-basketball-ball"></i>
+						<i class="fab fa-instagram"></i>
 					</div>
-				</div>
 			</div>
-		</footer>
+		</div>
+
 
 		<script src="js/bootstrap.min.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+			integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 		<script src="main.js"></script>
 	</body>
 </html>
