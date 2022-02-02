@@ -268,7 +268,7 @@ p {
 .image-items {
 	position: relative;
 	overflow: hidden;
-	padding: 0 15px;
+	padding: 0;
 	margin-bottom: 30px;
 	background-color: rgb(245, 175, 0);
 }
@@ -654,6 +654,20 @@ p {
 		line-height: 45px;
 	}
 
+	.container-fluid {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	.hover-img img {
+		width: 600px;
+		height: auto;
+	}
+
+	.image-items {
+		padding: 0;
+	}
+
 	.section_expert {
 		padding: 60px 0 50px;
 	}
@@ -705,6 +719,20 @@ p {
 	.navbar .navbar-nav {
 		display: none;
 	}
+
+	.navbar img {
+		position: absolute;
+		top: 25px;
+		left: 0;
+		padding-left: 10px;
+	}
+
+	.navbar .navbar-toggler {
+		position: absolute;
+		top: 30x;
+		right: 0;
+		margin-right: 10px;
+	}
 }
 
 @media screen and (max-width: 992px) {
@@ -751,5 +779,11 @@ p {
 	.section {
 		padding: 0;
 		margin-right: 0;
+	}
+}
+
+@media (max-width: 1200px) {
+	.section .sec .container {
+		width: 97.5%;
 	}
 }
