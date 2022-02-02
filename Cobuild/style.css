@@ -654,11 +654,6 @@ p {
 		line-height: 45px;
 	}
 
-	.container-fluid {
-		padding: 0 !important;
-		margin: 0 !important;
-	}
-
 	.hover-img img {
 		width: 600px;
 		height: auto;
@@ -782,8 +777,8 @@ p {
 	}
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
 	.section .sec .container {
 		width: 97.5%;
 	}
-}
+} */
