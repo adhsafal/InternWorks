@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* For Top section containing social media links */
+
+/* .main__wrapper {
+} */
+
+.top_section_contents {
+	background-color: #11161f;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding: 0 60px;
+	width: 100%;
+}
+
+.top_section_contents_media i,
+.top_section_contents_login i {
+	padding: 0 5px 0 0;
+}
+
+.top_section_contents_media ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.top_section_contents_login ul {
+	display: flex;
+	list-style-type: none;
+	margin-bottom: 0;
+	padding: 0;
+	position: absolute;
+	right: 35px;
+	top: 8px;
+}
+
+.top_section_contents a {
+	text-decoration: none;
+	color: #959ca7;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+.top_section_contents li {
+	margin-right: 25px;
+}
+
+.top_section_contents a:hover {
+	color: red;
+	transition: all 1s ease;
+}
+
+/* For the navbar section */
+
+.navbar {
+	background-color: black;
+}
+
+.navbar-nav a {
+	color: white !important;
+}
+
+.navbar-nav a:hover {
+	color: white !important;
+}
+
+.container-fluid {
+	background-color: transparent;
+	padding: 0 60px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar .navbar-brand img {
+	padding: 31px 31px 31px 0;
+}
+
+#navbarDropdown .nav-item {
+	padding: 31px 0;
+}
+
+.collapse .navbar-nav .nav-item a {
+	color: white;
+	font-family: "Barlow", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.collapse .navbar-nav .nav-item button {
+	border: none;
+	background-color: #fc3c3f;
+}
+
+.collapse .navbar-nav .nav-item button a {
+	letter-spacing: 0.2em;
+	font-size: 12px;
+	line-height: 30px;
+	padding: 0 30px;
+}
+
+.navbar-nav .nav-item i {
+	font-size: 25px;
+	line-height: 25px;
+	font-weight: normal;
+}
+
+.nav-item .nav-link {
+	margin-right: 50px;
+}
+
+#navbarSupportedContent {
+	justify-content: center;
+}
+
+/* For the banner section */
+
+.banner {
+	background-image: url("images/slide_v1_1.jpg");
+	height: 150vh !important;
+	/* background-attachment: fixed; */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	top: -10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.banner_contents .banner_subtitle {
+	font-family: "Sacramento", cursive;
+	color: rgb(252, 60, 60);
+	font-size: 80px;
+	line-height: 30px;
+	font-weight: 400;
+	z-index: 1;
+	position: relative;
+}
+
+.banner_contents h1 {
+	font-family: "Barlow", sans-serif;
+	color: white;
+	display: block;
+	text-transform: uppercase;
+	font-size: 80px;
+	line-height: 80px;
+	margin-bottom: 14px;
+	font-weight: 800;
+	position: relative;
+	top: 8px;
+}
+
+.banner_contents p {
+	color: white;
+	font-family: "Barlow", sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 500;
+	margin-bottom: 0px;
+}
+
+/* Banner middle section */
+
+.banner_middle_contents {
+	display: flex;
+	background-color: white;
+	position: absolute;
+	top: 125%;
+	justify-content: start;
+	width: max-content;
+}
+
+.banner_middle_contents input {
+	font-family: "Barlow", sans-serif;
+	font-size: 16px;
+	color: rgb(130, 136, 146);
+	height: 65px;
+	width: 100%;
+	font-weight: 500;
+	outline: none;
+	border: 0px solid;
+	border-bottom-left-radius: 5%;
+	border-top-left-radius: 5%;
+	padding: 1px 40px 1px 30px;
+}
+
+.select_options {
+	outline: none;
+	border: none;
+	color: rgb(130, 136, 146);
+	height: 65px;
+	padding: 0 30px;
+}
+
+.select_options option {
+	color: white;
+	background-color: black;
+	padding: 4px 20px;
+}
+
+.select_options option:active {
+	background-color: rgb(252, 60, 60);
+}
+
+.banner_middle_contents button {
+	border: none;
+	color: white;
+	background-color: rgb(252, 60, 60);
+	/* height: 80px; */
+	letter-spacing: 0.23em;
+}
+
+.banner_middle_contents button:hover {
+	color: black;
+	background-color: white;
+	transition: all 0.8s ease;
+}
+
+/* banner bottom section */
+
+.banner_bottom_contents {
+	display: flex;
+	position: absolute;
+	top: 150vh;
+}
+
+.banner_bottom_contents p {
+	color: white;
+	font-family: "Sacramento", cursive;
+	font-size: 40px;
+	line-height: 50px;
+	font-weight: 400;
+}
+
+/* Map and slider section  */
+
+.background_section {
+	background-image: url("images/map-1.png");
+	background-size: cover;
+	height: 100vh;
+}
+
+.slider_contents {
+	display: flex;
+	background-color: white;
+}
+
+.slider_items {
+	padding: 36px 0 33px;
+}
+
+.slider_items i {
+	color: red;
+	/* font-family: "barlow", sans-serif; */
+	font-size: 65px;
+	line-height: 65px;
+	font-weight: 400;
+	padding-bottom: 14px;
+}
+
+.slider_items .icon_name {
+	color: black;
+	font-family: "barlow", sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 600;
+}
