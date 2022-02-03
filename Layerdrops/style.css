@@ -5,10 +5,7 @@
 	margin: 0;
 }
 
-/* For Top section containing social media links */
-
-/* .main__wrapper {
-} */
+/* ---------For Top section containing social media links----------- */
 
 .top_section_contents {
 	background-color: #11161f;
@@ -58,14 +55,14 @@
 	transition: all 1s ease;
 }
 
-/* For the navbar section */
-
-.navbar {
-	background-color: black;
-}
+/* ---------------For the navbar section --------------------*/
 
 .navbar-nav a {
 	color: white !important;
+}
+
+.navbar {
+	background-color: black;
 }
 
 .navbar-nav a:hover {
@@ -96,44 +93,137 @@
 .collapse .navbar-nav .nav-item button {
 	border: none;
 	background-color: #fc3c3f;
+	border-radius: 5px;
+	display: flex;
+	position: relative;
+	right: 30px;
+}
+
+.collapse .navbar-nav .nav-item button:hover {
+	color: white;
+	background-color: white;
+	transition: all 1s ease;
 }
 
 .collapse .navbar-nav .nav-item button a {
-	letter-spacing: 0.2em;
-	font-size: 12px;
-	line-height: 30px;
+	display: inline-block;
 	padding: 0 30px;
+	font-size: 12px;
+	line-height: 55px;
+	letter-spacing: 0.2em;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background: #fc3c3f;
+	text-decoration: none;
 }
 
-.navbar-nav .nav-item i {
+.collapse .navbar-nav button:hover a {
+	color: black !important;
+	background-color: white;
+	transition: 1s all ease;
+}
+
+.navbar-nav a.search_cart i {
 	font-size: 25px;
-	line-height: 25px;
-	font-weight: normal;
+	margin-right: 15px;
+	position: relative;
+	top: 10px;
+	right: 35px;
 }
 
-.nav-item .nav-link {
-	margin-right: 50px;
+.navbar-nav a.search_cart i:hover {
+	color: #fc3c3f;
+	transition: ease all 1s;
 }
 
-#navbarSupportedContent {
-	justify-content: center;
+.collapse .navbar-nav button i {
+	position: relative;
+	font-size: 25px;
+	right: 10px;
+	top: 3px;
 }
 
-/* For the banner section */
+.collapse .navbar-nav .nav-item .dropdown-menu {
+	border-radius: 0px;
+	padding: 0;
+	position: absolute;
+	top: 87px;
+	left: 48px;
+}
+
+.collapse .center_content {
+	position: relative;
+	left: 20px;
+}
+
+.collapse .right_content {
+	position: relative;
+	left: 160px;
+}
+
+.collapse .center_content .nav-item a.border_transition {
+	padding: 31px 0;
+	margin: 0 0 0 50px;
+	border-top: 2px solid transparent;
+}
+
+.collapse .center_content .nav-item a.border_transition:hover {
+	border-top: 2px solid #fc3c3f;
+	transition: all 1.5s ease;
+	cursor: pointer;
+}
+
+.collapse .navbar-nav .nav-item .dropdown-menu a {
+	color: black !important;
+	width: 16vw;
+	line-height: 34px;
+	padding: 9.5px 20px;
+	font-size: 15px;
+	font-weight: 600;
+	transition: all 500ms ease;
+	word-break: break-all;
+}
+
+.collapse .navbar-nav .nav-item .dropdown-menu a:hover {
+	color: #fc3c3f !important;
+}
+
+/*--------- animation effect for navbar starts from here------------ */
+
+.scrolling-active {
+	background-color: black;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	top: 0;
+
+	animation-name: nav_slide;
+	animation-duration: 1s;
+	animation-direction: linear;
+}
+
+@keyframes nav_slide {
+	from {
+		top: -80px;
+	}
+
+	to {
+		top: 0px;
+	}
+}
+/* -----------------For the banner section -------------------*/
 
 .banner {
-	background-image: url("images/slide_v1_1.jpg");
-	height: 150vh !important;
 	/* background-attachment: fixed; */
+	background-image: url("images/slide_v1_1.jpg");
+	height: 133vh !important;
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
-	top: -10%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	position: relative;
 }
 
 .banner_contents .banner_subtitle {
@@ -191,6 +281,8 @@
 	border-bottom-left-radius: 5%;
 	border-top-left-radius: 5%;
 	padding: 1px 40px 1px 30px;
+	position: absolute;
+	top: 0;
 }
 
 .select_options {
