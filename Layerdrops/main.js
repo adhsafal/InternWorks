@@ -22,5 +22,7 @@
 window.addEventListener("scroll", function () {
     let header = document.querySelector("nav");
     let windowPosition = window.scrollY > 90;
+    let windowPos = window.scrollY < 90;
     header.classList.toggle("scrolling-active", windowPosition);
+    header.classList.toggle("scrolling-dactive", windowPos);
 });

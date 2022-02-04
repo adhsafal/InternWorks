@@ -7,6 +7,10 @@
 
 /* ---------For Top section containing social media links----------- */
 
+.main_contents {
+	position: relative;
+}
+
 .top_section_contents {
 	background-color: #11161f;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -15,6 +19,8 @@
 	align-items: center;
 	padding: 0 60px;
 	width: 100%;
+	position: relative;
+	z-index: 2;
 }
 
 .top_section_contents_media i,
@@ -62,7 +68,8 @@
 }
 
 .navbar {
-	background-color: black;
+	position: relative;
+	z-index: 2;
 }
 
 .navbar-nav a:hover {
@@ -198,7 +205,7 @@
 	top: 0;
 
 	animation-name: nav_slide;
-	animation-duration: 1s;
+	animation-duration: 0.5s;
 	animation-direction: linear;
 }
 
@@ -211,11 +218,28 @@
 		top: 0px;
 	}
 }
+
+.scrolling-dactive {
+	/* background-color: black; */
+	animation-name: nav_dslide;
+	animation-duration: 0.5s;
+	animation-direction: alternate reverse;
+}
+
+@keyframes nav_dslide {
+	from {
+		top: 65px;
+	}
+
+	to {
+		top: 0px;
+	}
+}
 /* -----------------For the banner section -------------------*/
 
-.banner {
-	/* background-attachment: fixed; */
+.banner_slider {
 	background-image: url("images/slide_v1_1.jpg");
+	background-image: url("images/slide_v1_2.jpg");
 	height: 133vh !important;
 	background-size: cover;
 	background-position: center;
@@ -223,7 +247,10 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 .banner_contents .banner_subtitle {
@@ -232,7 +259,7 @@
 	font-size: 80px;
 	line-height: 30px;
 	font-weight: 400;
-	z-index: 1;
+	z-index: 100;
 	position: relative;
 }
 
@@ -264,9 +291,11 @@
 	display: flex;
 	background-color: white;
 	position: absolute;
-	top: 125%;
+	top: 66%;
 	justify-content: start;
 	width: max-content;
+	border-radius: 4px;
+	padding: 0;
 }
 
 .banner_middle_contents input {
@@ -274,28 +303,29 @@
 	font-size: 16px;
 	color: rgb(130, 136, 146);
 	height: 65px;
-	width: 100%;
+
 	font-weight: 500;
 	outline: none;
 	border: 0px solid;
+	border-right: 1px solid rgb(130, 136, 146, 0.3);
 	border-bottom-left-radius: 5%;
 	border-top-left-radius: 5%;
-	padding: 1px 40px 1px 30px;
-	position: absolute;
-	top: 0;
+	padding: 1px 95px 1px 30px;
 }
 
-.select_options {
+.banner_middle_contents .select_options {
 	outline: none;
 	border: none;
 	color: rgb(130, 136, 146);
 	height: 65px;
-	padding: 0 30px;
+	padding: 1px 143px 1px 30px;
+	border-right: 1px solid rgb(130, 136, 146, 0.3);
 }
 
 .select_options option {
 	color: white;
 	background-color: black;
+	border: none;
 	padding: 4px 20px;
 }
 
@@ -303,15 +333,18 @@
 	background-color: rgb(252, 60, 60);
 }
 
-.banner_middle_contents button {
+button.next_to_banner_middle {
 	border: none;
 	color: white;
 	background-color: rgb(252, 60, 60);
-	/* height: 80px; */
 	letter-spacing: 0.23em;
+	border-radius: 4px;
+	margin-left: 15px;
+	height: 65px;
+	padding: 0 50px;
 }
 
-.banner_middle_contents button:hover {
+button.next_to_banner_middle:hover {
 	color: black;
 	background-color: white;
 	transition: all 0.8s ease;
