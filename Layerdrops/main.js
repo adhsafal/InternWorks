@@ -1,23 +1,39 @@
+$('.slider').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: '<i class="fal fa-arrow-left  left_arrow"></i>',
+    nextArrow: '<i class = "fal fa-arrow-right  right_arrow"></i>',
 
 
 
-// $('.slider').slick({
+    // mobileFirst: true,
+    // responsive: [{
+    //     breakpoint: 1024,
+    //     settings: {
+    //         slidesToShow: 1,
+    //         slidesToScroll: 1,
+    //         centerMode: false
+    //     }
+    // }]
+
+});
+
+// $('.places_slider').slick({
 //     infinite: true,
-//     slidesToShow: 6,
+//     slidesToShow: 4,
 //     slidesToScroll: 1,
-//     prevArrow: '<i class = "fas fa-angle-left  left_arrow"></i>',
-//     nextArrow: '<i class = "fas fa-angle-right  right_arrow"></i>',
-//     // mobileFirst: true,
-//     // responsive: [{
-//     //     breakpoint: 1024,
-//     //     settings: {
-//     //         slidesToShow: 1,
-//     //         slidesToScroll: 1,
-//     //         centerMode: false
-//     //     }
-//     // }]
-
+//     autoplay: true,
+//     centerMode: true,
+//     autoplaySpeed: 2000,
+//     prevArrow: false,
+//     nextArrow: false,
+//     dots: true,
 // });
+
+
 
 window.addEventListener("scroll", function () {
     let header = document.querySelector("nav");
@@ -26,3 +42,28 @@ window.addEventListener("scroll", function () {
     header.classList.toggle("scrolling-active", windowPosition);
     header.classList.toggle("scrolling-dactive", windowPos);
 });
+
+
+mybutton = document.getElementById("myBtn");
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+        mybutton.style.transition = "all 2s";
+        mybutton.style.display = "block";
+    }
+    else {
+        mybutton.style.display = "none"
+        mybutton.style.transition = "all 2s";
+
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+// ----------------Counter--------------
+
