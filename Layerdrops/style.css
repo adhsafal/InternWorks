@@ -838,6 +838,7 @@ button.next_to_banner_middle:hover {
 	position: absolute;
 	top: 20px;
 	left: 30px;
+	transition: all 1s ease;
 }
 
 .open p {
@@ -849,6 +850,11 @@ button.next_to_banner_middle:hover {
 	font-weight: 600;
 	margin: 0;
 	font-family: "Barlow", sans-serif;
+}
+
+.open:hover {
+	background-color: #fc3c3f;
+	transition: all 1s ease;
 }
 
 .image_part img:hover .image_part .open {
