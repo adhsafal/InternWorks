@@ -21,17 +21,17 @@ $('.slider').slick({
 
 });
 
-$('.places_slider').slick({
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    centerMode: true,
-    autoplaySpeed: 2000,
-    prevArrow: false,
-    nextArrow: false,
-    dots: true,
-});
+// $('.places_slider').slick({
+//     infinite: true,
+//     slidesToShow: 4,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     centerMode: true,
+//     autoplaySpeed: 2000,
+//     prevArrow: false,
+//     nextArrow: false,
+//     dots: true,
+// });
 
 $('.handpicked_slider').slick({
     infinite: true,

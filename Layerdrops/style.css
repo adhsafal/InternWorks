@@ -401,11 +401,13 @@ button.next_to_banner_middle:hover {
 .slider_container {
 	position: absolute;
 	top: 0;
+	left: 100px;
+	padding: 0 75px;
 	height: fit-content;
 	justify-content: center;
 	position: absolute;
 	top: 140vh;
-	left: 100px;
+
 	background-color: white;
 	border-radius: 4px;
 	box-shadow: 0px 4px 10px 2px rgb(0 0 0 / 5%);
@@ -416,7 +418,7 @@ button.next_to_banner_middle:hover {
 .slider_contents {
 	display: flex;
 	background-color: white;
-	margin-left: 47px;
+	/* margin-left: 47px; */
 	/* margin: 0 50px; */
 	/* border: 2px solid greenyellow; */
 }
@@ -424,9 +426,10 @@ button.next_to_banner_middle:hover {
 .slider_items {
 	padding: 36px 0 33px;
 	border-right: 1px solid #f0f3f6;
-	width: 170px !important;
+	/* width: 170px !important; */
 	text-align: center;
 	border-bottom: 2px solid transparent;
+	/* margin-right: 0 !important; */
 }
 
 .slider_items:hover {
@@ -475,8 +478,9 @@ button.next_to_banner_middle:hover {
 	justify-content: center;
 	align-items: center;
 	border-radius: 50px;
-	position: relative;
+	position: absolute;
 	top: 65px;
+	left: -45px;
 	cursor: pointer;
 }
 .slider .right_arrow {
@@ -489,8 +493,9 @@ button.next_to_banner_middle:hover {
 	justify-content: center;
 	align-items: center;
 	border-radius: 50px;
-	position: relative;
+	position: absolute;
 	top: 65px;
+	right: -45px;
 	cursor: pointer;
 }
 
@@ -512,6 +517,10 @@ button.next_to_banner_middle:hover {
 	top: 408px;
 	padding: 120px 0 160px;
 	height: fit-content;
+}
+
+.placesContent_wrapper {
+	padding: 0 15px;
 }
 
 .popular_places_upperContent h4,
@@ -1436,6 +1445,7 @@ button.next_to_banner_middle:hover {
 	font-family: "Barlow", sans-serif;
 	color: rgb(130, 136, 146);
 	text-align: center;
+	margin: 0;
 }
 
 .contactUs_contents p span {
@@ -1454,7 +1464,7 @@ button.next_to_banner_middle:hover {
 
 .newsArticles_Wrap {
 	position: absolute;
-	top: 6182px;
+	top: 6167px;
 	padding: 120px 0;
 	height: max-content;
 
@@ -1589,7 +1599,7 @@ button.next_to_banner_middle:hover {
 	padding: 120px 0;
 	position: absolute;
 	width: 100%;
-	top: 7323px;
+	top: 7308px;
 	border-top: 1px solid #dee2e8;
 	/* border: 2px solid red; */
 }
@@ -1616,7 +1626,7 @@ button.next_to_banner_middle:hover {
 .upperFooter {
 	background-color: rgb(22, 28, 38);
 	position: absolute;
-	top: 7588px;
+	top: 7575px;
 	width: 100%;
 	height: fit-content;
 	display: flex;
@@ -1628,7 +1638,7 @@ button.next_to_banner_middle:hover {
 	background-image: url("images/footer-map.png");
 	background-repeat: no-repeat;
 	width: 50vw;
-	height: 100vh;
+	height: 90vh;
 
 	position: absolute;
 	z-index: 0;
@@ -1842,7 +1852,7 @@ button.sub_button:hover {
 .footer {
 	background-color: rgb(17, 22, 31);
 	position: absolute;
-	top: 8127px;
+	top: 8114px;
 	width: 100%;
 	z-index: 1;
 	border-top: 1px solid rgba(239, 240, 241, 0.1);
