@@ -21,19 +21,36 @@ $('.slider').slick({
 
 });
 
-// $('.places_slider').slick({
-//     infinite: true,
-//     slidesToShow: 4,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     centerMode: true,
-//     autoplaySpeed: 2000,
-//     prevArrow: false,
-//     nextArrow: false,
-//     dots: true,
-// });
+$('.places_slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    centerMode: true,
+    autoplaySpeed: 2000,
+    prevArrow: false,
+    nextArrow: false,
+    dots: true,
+});
+
+$('.handpicked_slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: false,
+});
 
 
+$('.envato_slider').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+});
 
 window.addEventListener("scroll", function () {
     let header = document.querySelector("nav");
