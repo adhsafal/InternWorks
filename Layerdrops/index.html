@@ -190,7 +190,13 @@
 
 			<section class="banner">
 				<div class="banner_slider" id="bannerslider">
-					<!-- <img src="/images/slide_v1_1.jpg" alt="" /> -->
+					<!-- <div>
+						<img src="/images/slide_v1_1.jpg" alt="" />
+					</div>
+					<div>
+						<img src="/images/slide_v1_2.jpg" alt="" />
+					</div> -->
+					
 					<div class="banner_contents">
 						<div class="banner_subtitle">Let's Explore</div>
 						<h1>your amazing city</h1>
@@ -199,26 +205,28 @@
 						</p>
 					</div>
 					<div class="banner_middle_contents container">
-						<div class="input_section">
-							<input type="text" placeholder="What are you looking for?" />
-						</div>
-						<div class="dropdown_location">
-							<select class="select_options" id="">
-								<option selected="selected">Location</option>
-								<option>Default Sorting 1</option>
-								<option>Default Sorting 2</option>
-								<option>Default Sorting 3</option>
-								<option>Default Sorting 4</option>
-							</select>
-						</div>
-						<div class="dropdown_categories">
-							<select class="select_options" id="">
-								<option selected="selected">All categories</option>
-								<option>Default Sorting 1</option>
-								<option>Default Sorting 2</option>
-								<option>Default Sorting 3</option>
-								<option>Default Sorting 4</option>
-							</select>
+						<div class="location_category d-flex">
+							<div class="input_section">
+								<input type="text" placeholder="What are you looking for?" />
+							</div>
+							<div class="dropdown_location">
+								<select class="select_options" id="">
+									<option class="chosen" selected="selected">Location</option>
+									<option class="options">Default Sorting 1</option>
+									<option class="options">Default Sorting 2</option>
+									<option class="options">Default Sorting 3</option>
+									<option class="options">Default Sorting 4</option>
+								</select>
+							</div>
+							<div class="dropdown_categories">
+								<select class="select_options" id="">
+									<option class="chosen" selected="selected">All categories</option>
+									<option>Default Sorting 1</option>
+									<option>Default Sorting 2</option>
+									<option>Default Sorting 3</option>
+									<option>Default Sorting 4</option>
+								</select>
+							</div>
 						</div>
 						<button class="next_to_banner_middle">
 							<i class="far fa-search"></i>SEARCH

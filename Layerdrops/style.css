@@ -292,13 +292,22 @@
 
 .banner_middle_contents {
 	display: flex;
-	background-color: white;
+	/* background-color: white; */
 	position: absolute;
 	top: 60.5%;
 	justify-content: start;
 	width: max-content;
 	border-radius: 4px;
 	padding: 0;
+}
+
+.location_category {
+	background-color: white;
+	border-radius: 4px;
+}
+
+.dropdown_categories {
+	border-radius: 10px;
 }
 
 .banner_middle_contents input {
@@ -325,6 +334,8 @@ button.next_to_banner_middle {
 	margin-left: 15px;
 	height: 65px;
 	padding: 0 50px;
+	display: flex;
+	align-items: center;
 }
 
 button.next_to_banner_middle:hover {
@@ -342,27 +353,27 @@ button.next_to_banner_middle:hover {
 	border-right: 1px solid rgb(130, 136, 146, 0.3);
 }
 
-.select_options option {
+.select_options {
+	transition: 1s ease all;
+}
+
+.select_options .chosen {
+	background-color: #fc3c3f;
+}
+
+.select_options .options {
 	color: white;
 	font-size: 16px;
-	height: 34px !important;
+	height: 80px !important;
 	font-weight: 500;
 	background-color: black;
 	border: none;
 	padding: 4px 20px;
 }
 
-.select_options option [value="1"] {
-	background: rgb(252, 60, 60);
-}
-
-.select_options option:active {
-	background-color: rgb(252, 60, 60);
-}
-
-.select_options .selected_options {
-	background: rgb(252, 60, 60) !important;
-	color: #fff !important;
+.select_options .options:hover {
+	background-color: red;
+	transition: 1s ease all;
 }
 
 /* banner bottom section */
