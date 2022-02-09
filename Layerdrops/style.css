@@ -585,8 +585,8 @@ button.next_to_banner_middle:hover {
 
 .slick-dots {
 	position: absolute;
-	top: 415px;
-	left: 500px;
+	top: 550px;
+	left: 550px;
 	display: flex;
 	justify-content: center;
 	margin: 0;
@@ -840,7 +840,6 @@ button.next_to_banner_middle:hover {
 .handpicked_cards {
 	padding: 0 15px;
 	display: flex;
-	flex: auto;
 }
 
 .handpickedcard_all {
@@ -1662,7 +1661,24 @@ button.next_to_banner_middle:hover {
 	position: absolute;
 	top: 0;
 	left: 0;
+	-webkit-animation: bounce 1s infinite;
 }
+/* 
+@-webkit-keyframes bounce {
+	0% {
+		bottom: 5px;
+	}
+	25%,
+	75% {
+		bottom: 15px;
+	}
+	50% {
+		bottom: 20px;
+	}
+	100% {
+		bottom: 0;
+	}
+} */
 
 .leftContents {
 	position: absolute;
@@ -1767,6 +1783,13 @@ ul.footer_categoryLists li a {
 	font-weight: 500;
 	font-family: "Barlow", sans-serif;
 	line-height: 34px;
+	transition: 0.8s all ease;
+}
+
+ul.footer_exploreLists li a:hover,
+ul.footer_categoryLists li a:hover {
+	color: white;
+	transition: 0.8s all ease;
 }
 
 ul.footer_exploreLists li,
