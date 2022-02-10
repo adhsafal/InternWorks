@@ -30,18 +30,18 @@ $('.places_slider').slick({
     autoplaySpeed: 2000,
     prevArrow: false,
     nextArrow: false,
-    // dots: true,
-});
-
-$('.clients_slider').slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    arrows: false,
     // dots: true
 });
+
+// $('.client_slider').slick({
+//     infinite: true,
+//     slidesToShow: 2,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 1000,
+//     arrows: false,
+//     // dots: true
+// });
 
 $('.handpicked_slider').slick({
     infinite: true,

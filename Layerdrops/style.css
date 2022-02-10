@@ -616,17 +616,22 @@ button.next_to_banner_middle:hover {
 	width: 17px;
 }
 
+.slick-list {
+	padding: 15px 0 0 0 !important;
+	/* margin-right: 0; */
+}
+
 .popularPlaces_sliderItems {
 	width: 307.25px;
 	height: 417px !important;
-	margin-right: 30px !important;
+	/* margin-right: 30px !important; */
 }
 
 .popularPlaces_sliderItems img {
 	width: 307.25px;
 	position: relative;
 	z-index: -1;
-	margin-right: 30px !important;
+	/* margin-right: 30px; */
 }
 
 .image_and_listings {
@@ -716,16 +721,23 @@ button.next_to_banner_middle:hover {
 .popularPlaces_sliderItems:hover .animation_container {
 	display: block;
 	z-index: 2;
-	animation-name: "popularPlaces_animation";
-	animation-duration: 2s;
-	animation-direction: linear;
-	animation: spin;
+	/* animation: rotatetext 2s infinite; */
 }
 .popularPlaces_sliderItems:hover .animation_container h3 {
 	color: black;
 }
 
-@keyframes popularPlaces_animation {
+/* .popularPlaces_sliderItems:hover .imagesText {
+	animation: rotatetext 1s linear;
+} */
+
+@keyframes rotatetext {
+	0% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
 }
 
 /* ------------------------------------------------------- */
