@@ -716,20 +716,21 @@ button.next_to_banner_middle:hover {
 	top: -350.5px;
 	background-color: white;
 	display: none;
+	transform: rotateX(90deg);
 }
 
 .popularPlaces_sliderItems:hover .animation_container {
 	display: block;
 	z-index: 2;
-	/* animation: rotatetext 2s infinite; */
+	animation: rotatetext 2s ease-in-out;
 }
 .popularPlaces_sliderItems:hover .animation_container h3 {
 	color: black;
 }
 
-/* .popularPlaces_sliderItems:hover .imagesText {
-	animation: rotatetext 1s linear;
-} */
+.popularPlaces_sliderItems:hover .imagesText {
+	animation: rotateimagesText 3s linear;
+}
 
 @keyframes rotatetext {
 	0% {
@@ -737,6 +738,15 @@ button.next_to_banner_middle:hover {
 	}
 	100% {
 		transform: rotateY(360deg);
+	}
+}
+
+@keyframes rotateimagesText {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
 	}
 }
 
