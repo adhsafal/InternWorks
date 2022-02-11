@@ -488,9 +488,8 @@ button.next_to_banner_middle:hover {
 }
 
 .slider_container {
-	position: absolute;
-	top: 0;
-	left: 100px;
+	left: 50%;
+	transform: translate(-50%);
 	padding: 0 75px;
 	height: fit-content;
 	justify-content: center;
@@ -664,7 +663,7 @@ button.next_to_banner_middle:hover {
 .slick-dots {
 	position: absolute;
 	top: 550px;
-	left: 550px;
+	left: 630px;
 	display: flex;
 	justify-content: center;
 	margin: 0;
@@ -694,7 +693,7 @@ button.next_to_banner_middle:hover {
 	width: 17px;
 }
 
-.slick-list {
+.places_slider .slick-list {
 	padding: 15px 0 0 0 !important;
 	/* margin-right: 0; */
 }
@@ -1104,6 +1103,10 @@ button.next_to_banner_middle:hover {
 	/* margin-left: 140px; */
 }
 
+.handpicked_slider .slick-list {
+	padding: 15px !important;
+}
+
 /* ------------------------------------------------------- */
 /* ------------------------------------------------------- */
 /*------------------- Special offers section ------------- */
@@ -1191,6 +1194,8 @@ button.next_to_banner_middle:hover {
 .testimonials_lowerContent {
 	position: absolute;
 	top: 450px;
+	/* left: 50%;
+	transform: translate(-50%); */
 }
 
 .client_testimonies {
@@ -1354,8 +1359,9 @@ button.next_to_banner_middle:hover {
 
 .center_videoImage img {
 	position: absolute;
-	left: 90px;
 	top: 300px;
+	left: 50%;
+	transform: translate(-50%);
 }
 
 .center_videoImage {
@@ -1455,7 +1461,7 @@ button.next_to_banner_middle:hover {
 }
 
 .boxcol {
-	padding: 0 15px;
+	padding: 0 11px;
 }
 
 .boxesContents {
@@ -1581,6 +1587,7 @@ button.next_to_banner_middle:hover {
 	display: flex;
 	text-align: center;
 	justify-content: center;
+	width: 100%;
 	/* border: 2px solid black; */
 }
 
@@ -1589,7 +1596,7 @@ button.next_to_banner_middle:hover {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 118.2vh;
+	height: 116.5vh;
 	width: 100%;
 	position: absolute;
 	z-index: -1;
@@ -1637,6 +1644,7 @@ button.next_to_banner_middle:hover {
 	text-align: start;
 	padding: 10px 0 30px;
 	margin: 0;
+	width: 275px;
 }
 
 .blogs_contents h3 a:hover {
@@ -1661,6 +1669,7 @@ button.next_to_banner_middle:hover {
 	margin: -70px 30px 0 0;
 	padding: 18px 30px 20px;
 	position: relative;
+	left: 20px;
 	z-index: 1;
 	width: fit-content;
 	border-top-right-radius: 4px;
@@ -1706,7 +1715,7 @@ button.next_to_banner_middle:hover {
 .imgoverlay {
 	position: absolute;
 	top: 0px;
-	left: 5px;
+	left: 20px;
 	height: 449px;
 	width: 370px;
 	opacity: 0;
