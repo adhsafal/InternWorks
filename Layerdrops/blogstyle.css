@@ -398,6 +398,120 @@
 	padding: 0 !important;
 }
 
+.right_middle_section {
+	background-color: #f0f3f6;
+	margin: 30px 0 0;
+	padding: 50px 20px 20px;
+}
+
+.right_middle_section h3 {
+	font-size: 20px;
+	font-family: "Barlow", sans-serif;
+	font-weight: 800;
+	line-height: 24px;
+	padding: 0 0 0 30px;
+	margin: 0;
+}
+
+.blog_posts {
+	display: flex;
+	padding: 30px;
+	justify-content: space-around;
+	transition: ease all 0.5s;
+	border-radius: 4px;
+}
+
+.blog_posts:hover {
+	background-color: white;
+	transition: ease all 0.5s;
+}
+
+.about_posts {
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+	margin-left: 15px;
+}
+
+.blog_posts .about_posts a {
+	text-decoration: none;
+	color: rgb(130, 136, 146);
+	font-size: 14px;
+	font-weight: 600;
+	font-family: "Barlow", sans-serif;
+	line-height: 26px;
+	transition: ease all 0.5s;
+}
+
+.blog_posts .about_posts a:hover {
+	color: #fc3c3f;
+	transition: ease all 0.5s;
+}
+
+.blog_posts .about_posts a span {
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+	font-family: "Barlow", sans-serif;
+	font-weight: 600;
+	line-height: 26px;
+	transition: ease all 0.5s;
+}
+
+.blog_posts .about_posts a span:hover {
+	color: #fc3c3f;
+	transition: ease all 0.5s;
+}
+
+.blog_posts .about_posts a i {
+	color: #fc3c3f;
+}
+
+.right_bottom_section {
+	background-color: #f0f3f6;
+	margin: 30px 0 0;
+	padding: 44px 50px 40px;
+}
+
+.right_bottom_section h3 {
+	font-size: 20px;
+	font-family: "Barlow", sans-serif;
+	font-weight: 800;
+	line-height: 24px;
+	margin: 0 0 23px;
+}
+
+.right_bottom_section ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.right_bottom_section ul li {
+	margin: 15px 0 0;
+}
+
+.right_bottom_section ul li a {
+	font-size: 18px;
+	text-decoration: none;
+	font-family: "Barlow", sans-serif;
+	font-weight: 500;
+	line-height: 34px;
+	margin: 0;
+	color: #959ca7;
+	transition: all 0.5s ease;
+}
+
+.right_bottom_section ul li a::before {
+	content: ">";
+	display: none;
+}
+
+.right_bottom_section ul li a:hover {
+	color: black;
+	transition: all 0.5s ease;
+}
+
 /* ------------------------------------------------------------------------- */
 
 .upperFooter {
