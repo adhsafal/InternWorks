@@ -221,7 +221,7 @@ ul.dropdown_menu {
 	display: block;
 	display: flex;
 	z-index: 2;
-	animation: navbarMenu_animation 0.2s linear;
+	animation: navbarMenu_animation 0.3s linear;
 	transition: all ease 1s;
 }
 
