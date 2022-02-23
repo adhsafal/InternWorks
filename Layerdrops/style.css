@@ -2076,3 +2076,36 @@ button.sub_button:hover {
 	font-weight: 900;
 	color: white;
 }
+/* 
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+	.top_section_contents {
+		display: none;
+	}
+
+	.right_content ul {
+		display: none;
+	}
+
+	.nav_wrapper {
+		background-color: black;
+		opacity: 0.5;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.nav_menu {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1322px) {
+	.right_content ul li button a {
+		line-height: 55px;
+	}
+}
