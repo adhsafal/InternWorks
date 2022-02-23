@@ -1,0 +1,80 @@
+.contactus_cards {
+	position: relative;
+	top: 375px;
+	padding: 170px 0 40px;
+	/* border: 2px solid red; */
+}
+
+.contactCard {
+	padding: 0 15px;
+}
+
+.contact_details {
+	padding: 82px 0 55px;
+	margin-bottom: 80px;
+	box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 7%);
+	border-bottom: 3px solid transparent;
+	transition: ease all 0.5s;
+}
+
+.contact_details:hover {
+	border-bottom: 2px solid #fc3c3f;
+	transition: ease all 0.5s;
+}
+
+.contact_details h3 {
+	font-family: "Barlow", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 30px;
+	text-align: center;
+}
+
+.contact_details p {
+	font-family: "Barlow", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 34px;
+	text-align: center;
+	color: rgb(130, 136, 146);
+}
+
+.contactus {
+	position: relative;
+	top: 375px;
+	padding: 0 0 120px;
+	/* border: 2px solid black; */
+}
+
+.contactus_contents h4 {
+	color: #fc3c3f;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: "Barlow", sans-serif;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	margin: 0;
+}
+
+.contactus_contents h2 {
+	font-size: 50px;
+	font-weight: 800;
+	font-family: "Barlow", sans-serif;
+	line-height: 60px;
+	text-transform: capitalize;
+	margin: 0 0 35px;
+}
+
+.contactus_contents p {
+	font-family: "Barlow", sans-serif;
+	font-size: 18px;
+	line-height: 34px;
+	font-weight: 500;
+	color: rgb(130, 136, 146);
+	margin: 0;
+}
+
+.contactus_contents {
+	margin: -6px 0 55px;
+}
