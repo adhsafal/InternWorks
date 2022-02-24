@@ -514,28 +514,28 @@ button.next_to_banner_middle:hover {
 .slider_items {
 	padding: 36px 0 33px;
 	border-right: 1px solid #f0f3f6;
-	/* width: 170px !important; */
 	text-align: center;
-	border-bottom: 2px solid transparent;
-	/* margin-right: 0 !important; */
+}
+
+.slider_items::after {
+	content: "";
+	height: 2px;
+	width: 0px;
+	background-color: #fc3c3f;
+	position: absolute;
+	bottom: 0;
+	transition: 1s;
+	left: 0;
+}
+
+.slider_items:hover::after {
+	width: 100% !important;
+	overflow: hidden;
 }
 
 .slider_items:hover {
-	border-bottom: 2px solid rgb(252, 60, 60);
 	background-color: #f0f3f6;
-	animation: border_slider 2s linear;
 }
-/* @keyframes border_slider {
-	0% {
-		border-bottom: 2px solid rgb(252, 60, 60);
-	}
-	50% {
-		border-bottom: 2px solid rgb(252, 60, 60);
-	}
-	100% {
-		border-bottom: 2px solid rgb(252, 60, 60);
-	}
-} */
 
 .slider_items i {
 	color: rgb(252, 60, 60);
@@ -1900,10 +1900,20 @@ ul.footer_categoryLists li a {
 	transition: 0.8s all ease;
 }
 
+/* ul.footer_exploreLists li a::before,
+ul.footer_categoryLists li a::before {
+	content: ">";
+	position: absolute;
+	display: none;
+} */
+
 ul.footer_exploreLists li a:hover,
 ul.footer_categoryLists li a:hover {
 	color: white;
 	transition: 0.8s all ease;
+	position: relative;
+	left: 5px;
+	transition: 2s;
 }
 
 ul.footer_exploreLists li,
