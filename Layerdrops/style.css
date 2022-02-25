@@ -186,6 +186,8 @@
 .button_plus {
 	font-size: 15px !important;
 	transition: all 0.5s ease;
+	margin: 0 7px 0 0 !important;
+	font-weight: 400;
 }
 
 .right_content ul li button:hover a,
@@ -515,6 +517,7 @@ button.next_to_banner_middle:hover {
 	padding: 36px 0 33px;
 	border-right: 1px solid #f0f3f6;
 	text-align: center;
+	transition: 1s;
 }
 
 .slider_items::after {
