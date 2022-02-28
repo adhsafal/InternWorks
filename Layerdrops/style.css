@@ -147,6 +147,7 @@
 	display: flex;
 	margin: 0;
 	align-items: center;
+	float: left;
 }
 
 .right_content ul li i {
@@ -906,13 +907,6 @@ button.next_to_banner_middle:hover {
 .numbers {
 	position: absolute;
 	top: 2450px;
-	left: -10px;
-}
-.numbers_outerContainer {
-	height: 100px;
-	width: 100%;
-	border-radius: 4px;
-	background: #fc3c3f;
 }
 
 .innerContainer {
@@ -925,14 +919,17 @@ button.next_to_banner_middle:hover {
 	position: absolute;
 	top: 8px;
 	left: -8px;
-	width: 100%;
 	display: inline-flex;
 	border-radius: 4px;
-	/* border: #fc3c3f 2px solid; */
+	border-top: #fc3c3f 8px solid;
 }
 .innerContainer_numbers {
-	padding: 100px 0 0 60px;
+	padding: 100px 90px 0 60px;
 	border-right: 1px solid rgb(130, 136, 146, 0.2);
+}
+
+.innerContainer_numbers p {
+	display: contents;
 }
 
 .innerContainer_numbers h3 {
@@ -952,6 +949,7 @@ button.next_to_banner_middle:hover {
 	font-weight: 500;
 	font-family: "barlow", sans-serif;
 	margin: 0px !important;
+	width: max-content;
 }
 /* ------------------------------------------------------- */
 /* ------------------------------------------------------- */
@@ -2085,6 +2083,10 @@ button.sub_button:hover {
 	transition: 1s ease all;
 }
 
+.footerContent_Wrapper .container {
+	max-width: 1200px;
+}
+
 /* ------------------------------------------------------- */
 /* ------------------------------------------------------- */
 /*------------------- Designs for up arrow button ------------- */
@@ -2119,6 +2121,117 @@ button.sub_button:hover {
 	font-weight: 900;
 	color: white;
 }
+
+/* ----------------------------------------------------------- */
+#offcanvasExample {
+	background-color: #161c26;
+	opacity: 1;
+}
+
+.offcanvas {
+	padding: 20px 0 40px;
+	width: 70%;
+	overflow: auto;
+}
+
+.offcanvas a i {
+	font-size: 30px;
+	line-height: 34px;
+	color: white;
+	float: right;
+	padding-right: 40px;
+}
+
+.offcanvas .canvas_menu ul {
+	list-style-type: none;
+	padding: 50px 100px 65px;
+	margin-bottom: 0;
+}
+
+.offcanvas .canvas_menu ul li a {
+	color: rgb(151, 154, 165);
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: "Barlow", sans-serif;
+	line-height: 44px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	display: block;
+	transition: 0.5s all ease;
+}
+
+.offcanvas .canvas_menu ul li a:hover {
+	color: white;
+	transition: 0.5s all ease;
+}
+
+.canvas_lowerContent {
+	display: flex;
+	flex-direction: column;
+	padding: 0 100px;
+}
+
+.canvas_lowerContent a.emailid {
+	color: rgb(151, 154, 165);
+	text-decoration: none;
+	font-size: 18px;
+	font-family: "Barlow", sans-serif;
+	font-weight: 500;
+	letter-spacing: 0.2em;
+	padding-top: 65px;
+	border-top: 0.5px solid rgb(151, 154, 165);
+}
+
+.canvas_lowerContent a.numb {
+	color: rgb(151, 154, 165);
+	text-decoration: none;
+	font-size: 18px;
+	font-family: "Barlow", sans-serif;
+	font-weight: 500;
+	letter-spacing: 0.2em;
+	transition: 0.5s all ease;
+}
+
+.canvas_lowerContent a.emailid:hover,
+.canvas_lowerContent a.numb:hover {
+	color: #fc3c3f;
+	transition: 0.5s all ease;
+}
+
+.canvas_socialMedia ul {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+}
+
+.canvas_socialMedia {
+	margin: 40px 0;
+}
+
+.canvas_socialMedia ul li i {
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 500;
+	color: black;
+	padding: 0;
+	height: 50px;
+	width: 50px;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 12px;
+	transition: 0.7s all ease;
+}
+
+.canvas_socialMedia ul li i:hover {
+	color: white;
+	background-color: #fc3c3f;
+	transition: 0.7s all ease;
+}
+
 /* 
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
@@ -2126,7 +2239,7 @@ button.sub_button:hover {
 -------------------------------------------------------------------------------
 ------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
 	#myBtn {
 		right: 0;
 	}
@@ -2262,10 +2375,6 @@ button.sub_button:hover {
 		flex-direction: column;
 	}
 
-	.numbers_outerContainer {
-		width: 650px;
-	}
-
 	.numbers_innerContainer {
 		width: 658px !important;
 	}
@@ -2337,7 +2446,6 @@ button.sub_button:hover {
 
 	.testimonials {
 		top: 985px;
-		display: none;
 	}
 
 	.testimonial_map {
@@ -2349,14 +2457,18 @@ button.sub_button:hover {
 		top: 220px;
 	}
 
-	.container_testimonial {
-		margin: 0 !important;
+	.testimonials .container {
+		max-width: 540px !important;
 	}
 
 	.video {
-		top: 5340px;
+		top: 5960px;
 		padding: 120px 0 0;
 		height: auto !important;
+	}
+
+	.video_redImage {
+		display: none;
 	}
 
 	.video_container {
@@ -2391,7 +2503,7 @@ button.sub_button:hover {
 	}
 
 	.fourBoxes {
-		top: 5909px;
+		top: 6529px;
 		/* display: none; */
 	}
 
@@ -2400,7 +2512,7 @@ button.sub_button:hover {
 	}
 
 	.newsArticles_Wrap {
-		top: 7302px;
+		top: 7921px;
 	}
 
 	.newsArticles_container {
@@ -2409,6 +2521,10 @@ button.sub_button:hover {
 
 	.newsBlogs {
 		flex-direction: column;
+	}
+
+	.news_articles {
+		height: 170.5vh;
 	}
 
 	.blogs_contents h3 {
@@ -2421,14 +2537,41 @@ button.sub_button:hover {
 	}
 
 	.envato {
-		display: none;
+		top: 10795px;
 	}
 
 	.upperFooter {
-		display: none;
+		top: 11060px;
 	}
 	.footer {
-		display: none;
+		top: 11880px;
+	}
+
+	.footer_contents {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer_socialMedia {
+		margin-top: 20px;
+	}
+
+	.footerContent_Wrapper .container {
+		max-width: 540px;
+	}
+
+	.footer_logo .footerText {
+		width: 100%;
+		padding-right: 155px;
+	}
+
+	.footerContent_Wrapper .container .row {
+		display: flex;
+		flex-direction: column !important;
+	}
+
+	#myBtn {
+		right: 40px;
 	}
 }
 
@@ -2437,6 +2580,9 @@ button.sub_button:hover {
 		display: none;
 	}
 
+	.responsive_navbar_icon {
+		display: block;
+	}
 	.navbar_container {
 		padding: 0 15px !important;
 	}
