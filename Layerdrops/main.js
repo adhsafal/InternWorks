@@ -1,36 +1,58 @@
 $('.slider').slick({
     infinite: true,
-    slidesToShow: 6,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     prevArrow: '<i class="fal fa-arrow-left  left_arrow"></i>',
     nextArrow: '<i class = "fal fa-arrow-right  right_arrow"></i>',
 
+    mobileFirst: true,
+    responsive: [
+        // {
+        //     breakpoint: 1200,
+        //     settings: {
+        //         slidesToShow: 2,
+        //         slidesToScroll: 1,
+        //         centerMode: false
+        //     }
+        // },
 
+        // {
+        //     breakpoint: 768,
+        //     settings: {
+        //         slidesToShow: 1,
+        //         slidesToScroll: 1,
+        //         centerMode: false
+        //     }
+        // }
 
-    // mobileFirst: true,
-    // responsive: [{
-    //     breakpoint: 1024,
-    //     settings: {
-    //         slidesToShow: 1,
-    //         slidesToScroll: 1,
-    //         centerMode: false
-    //     }
-    // }]
+    ]
 
 });
 
 $('.places_slider').slick({
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     centerMode: true,
     autoplaySpeed: 2000,
     prevArrow: false,
     nextArrow: false,
-    // dots: true
+    mobileFirst: true,
+    pauseOnHover: true,
+    // dots: true,
+    // responsive: [
+    //     {
+    //         breakpoint: 800,
+    //         settings: {
+    //             slidesToShow: 1,
+    //             slidesToScroll: 1,
+    //             centerMode: false
+    //         }
+    //     }
+    // ]
 });
 
 // $('.client_slider').slick({
@@ -51,6 +73,25 @@ $('.handpicked_slider').slick({
     autoplaySpeed: 3000,
     arrows: false,
     dots: true
+});
+
+$('.testimonial_slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: false
+            }
+        }
+    ]
 });
 
 
@@ -83,8 +124,6 @@ function scrollFunction() {
     }
     else {
         mybutton.style.display = "none"
-        mybutton.style.transition = "all 2s";
-
     }
 }
 

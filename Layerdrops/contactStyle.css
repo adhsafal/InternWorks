@@ -113,3 +113,34 @@
 .contactus_contents {
 	margin: -6px 0 55px;
 }
+
+.contactus_cards .container {
+	width: 1200px;
+}
+
+.contactus .container {
+	width: 1200px;
+	padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.contactus_cards {
+		top: 463px;
+	}
+
+	.contactus_cards .container {
+		width: 540px;
+	}
+
+	.contactus {
+		top: 463px;
+	}
+
+	.contactus .container {
+		flex-direction: column;
+	}
+
+	.form_section {
+		margin-top: 50px;
+	}
+}

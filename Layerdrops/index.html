@@ -58,7 +58,7 @@
 			<!-- Navbar section starts from here -->
 
 			<nav class="nav_wrapper">
-				<div class="container-fluid" style="padding:0 60px !important">
+				<div class="container-fluid navbar_container">
 					<div class="nav_allContents">
 						<div class="nav_logo">
 							<a href="/index.html"><img src="images/logo.png" alt="logo"></a>
@@ -122,7 +122,12 @@
 									</button>
 								</li>
 							</ul>
-						</div>	
+						</div>
+						
+						<div class="responsive_navbar_icon">
+							<a href="#"><i class="fal fa-bars"></i></a>
+						</div>
+					
 					</div>
 				</div>
 			</nav>
@@ -145,7 +150,7 @@
 							Find great places to stay, eat, shop, or visit from local experts.
 						</p>
 					</div>
-					<div class="banner_middle_contents container">
+					<div class="banner_middle_contents container" style="padding: 0 15px;">
 						<div class="location_category d-flex">
 							<div class="input_section">
 								<input type="text" placeholder="What are you looking for?" />
@@ -1039,23 +1044,25 @@
 
 
 		<section class="special_offers position-relative">
-			<div class="container-fluid">
-				<div class="col-md-12 d-flex align-items-center">
+			<div class="container" style="max-width: 1200px ; margin: 0; padding: 0 15px;">
+				<div class="col-md-12 d-flex align-items-center special_offers_responsive">
 					<div class="specialOffers_image">
 						<img src="/images/cta-1-img-1.jpg" alt="banner">
 					</div>
-					<div class="specialOffers_content">
-						<p>Sign up to get</p>
-						<h2>Special Offers Every Day</h2>
+					<div class="specialOffers_showmore">
+						<div class="specialOffers_content">
+							<p>Sign up to get</p>
+							<h2>Special Offers Every Day</h2>
+						</div>
+						<a href="#">Show more</a>
 					</div>
-					<a href="#">Show more</a>
 				</div>
 			</div>
 		</section>
 
 
 		<section class="testimonials">
-			<div class="container">
+			<div class="container container_testimonial">
 				<div class="testimonials_upperContent">
 					<h4>Our testimonials</h4>
 					<h2>What They Say</h2>
@@ -1063,7 +1070,7 @@
 				</div>
 				<div class="testimonial_map"></div>
 				<div class="testimonials_lowerContent">
-					<div class="client_testimonies d-flex">
+					<div class="client_testimonies d-flex testimonial_slider">
 						<!-- <div class="client_slider"> -->
 							<div>
 								<div class="client_details">
@@ -1127,7 +1134,7 @@
 		</section>		
 		
 		<section class="video">
-			<div class="container">
+			<div class="container video_container">
 				<div class="video_redImage">
 					<img src="/images/video-1-shape-1.png" alt="Red Patch">
 				</div>
@@ -1223,7 +1230,7 @@
 
 		<section class="newsArticles_Wrap">
 			<div class="news_articles"></div>
-				<div class="container-fluid" style="max-width: 1200px; padding: 0;">
+				<div class="container-fluid newsArticles_container" style="max-width: 1200px; padding: 0;">
 					<div class="news_articles_contents">
 						<h4>From the blog</h4>
 						<h2>News & Articles</h2>
@@ -1423,14 +1430,6 @@
 				</div>
 			</div>
 		</section>
-		
-
-
-		
-
-
-
-		
 
 		<button id="myBtn" onclick="topFunction()">
 			<i class="fal fa-chevron-up"></i>

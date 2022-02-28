@@ -7,3 +7,18 @@
 .blogs {
 	margin-bottom: 30px;
 }
+
+.newsArticles_Wrap .container {
+	max-width: 1200px;
+	padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.newsArticles_Wrap {
+		top: 463px;
+	}
+
+	.newsArticles_Wrap .container {
+		max-width: 540px !important;
+	}
+}
