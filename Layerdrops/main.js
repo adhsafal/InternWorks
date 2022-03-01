@@ -33,26 +33,26 @@ $('.slider').slick({
 
 $('.places_slider').slick({
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     centerMode: true,
     autoplaySpeed: 2000,
     prevArrow: false,
     nextArrow: false,
-    mobileFirst: true,
     pauseOnHover: true,
-    // dots: true,
-    // responsive: [
-    //     {
-    //         breakpoint: 800,
-    //         settings: {
-    //             slidesToShow: 1,
-    //             slidesToScroll: 1,
-    //             centerMode: false
-    //         }
-    //     }
-    // ]
+    dots: true,
+    // mobileFirst: true,
+    responsive: [
+        {
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                centerMode: false
+            }
+        }
+    ]
 });
 
 // $('.client_slider').slick({
