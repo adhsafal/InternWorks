@@ -7,6 +7,7 @@
 
 .blog_banner_wrapper {
 	position: relative;
+	height: max-content !important;
 }
 
 .blog_banner {
@@ -531,11 +532,11 @@
 
 @media screen and (max-width: 768px) {
 	.blog_banner {
-		height: 142vh;
+		max-height: 83vh;
 	}
 
 	.blogsWrapper {
-		top: 463px !important;
+		top: 418px !important;
 	}
 
 	.blogsWrapper .container {
@@ -594,5 +595,11 @@
 
 	.blog_posts {
 		justify-content: flex-start;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		max-width: 100% !important;
 	}
 }

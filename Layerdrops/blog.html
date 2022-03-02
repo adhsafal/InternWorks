@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -10,7 +10,6 @@
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="blogDetail.css" />
 		<link rel="stylesheet" href="blog.css" />
-
 
 		<link
 			rel="stylesheet"
@@ -26,74 +25,99 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<script src="https://kit.fontawesome.com/f01c89c3bc.js" crossorigin="anonymous"></script>
-
+		<script
+			src="https://kit.fontawesome.com/f01c89c3bc.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
 		<!-- This is the top section containing social media links -->
-			<div class="top_section_contents">
-				<div class="top_section_contents_media">
-					<ul>
-						<li>
-							<a href="#"><i class="fab fa-twitter"></i>Twitter</a>
-						</li>
-						<li>
-							<a href="#"><i class="fab fa-facebook"></i>Facebook</a>
-						</li>
-						<li>
-							<a href="#"><i class="fab fa-pinterest"></i>Pinterest</a>
-						</li>
-						<li>
-							<a href="#"><i class="fab fa-youtube"></i>Youtube</a>
-						</li>
-					</ul>
-				</div>
-				<div class="top_section_contents_login">
-					<ul>
-						<li>
-							<a href="#"><i class="fas fa-heart"></i>Wishlist</a>
-						</li>
-						<li>
-							<a href="#"><i class="fas fa-user"></i>Sign in or Register</a>
-						</li>
-					</ul>
-				</div>
+		<div class="top_section_contents">
+			<div class="top_section_contents_media">
+				<ul>
+					<li>
+						<a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-pinterest"></i>Pinterest</a>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-youtube"></i>Youtube</a>
+					</li>
+				</ul>
 			</div>
-			<!-- Navbar section starts from here -->
+			<div class="top_section_contents_login">
+				<ul>
+					<li>
+						<a href="#"><i class="fas fa-heart"></i>Wishlist</a>
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-user"></i>Sign in or Register</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Navbar section starts from here -->
 
-			<nav class="nav_wrapper">
-				<div class="container-fluid navbar_container">
-					<div class="nav_allContents">
-						<div class="nav_logo">
-							<a href="/index.html"><img src="images/logo.png" alt="logo"></a>
+		<nav class="nav_wrapper">
+			<div class="container-fluid navbar_container">
+				<div class="nav_allContents">
+					<div class="nav_logo">
+						<a href="/index.html"><img src="images/logo.png" alt="logo" /></a>
+					</div>
+					<div class="canvas">
+						<div class="responsive_navbar_icon">
+							<a
+								class="btn"
+								data-bs-toggle="offcanvas"
+								href="#offcanvasExample"
+								role="button"
+								aria-controls="offcanvasExample"
+							>
+								<i class="fal fa-bars"></i>
+							</a>
 						</div>
-						<div class="canvas">
-							<div class="responsive_navbar_icon">
-								<a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-								  <i class="fal fa-bars"></i>
-								</a>
-							</div>
-							
-							<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">	
-								<a href=""><i class="fal fa-times"></i></a>
-								<div class="canvas_menu">
+
+						<div
+							class="offcanvas offcanvas-start"
+							tabindex="-1"
+							id="offcanvasExample"
+							aria-labelledby="offcanvasExampleLabel"
+						>
+							<a href=""><i class="fal fa-times"></i></a>
+							<div class="canvas_menu">
 								<ul>
 									<li>
-										<a href="/index.html" data-bs-toggle="dropdown" class="dropdown-toggle">Home</a>
+										<a
+											href="/index.html"
+											data-bs-toggle="dropdown"
+											class="dropdown-toggle"
+											>Home</a
+										>
 										<ul class="dropdown_menu">
 											<li><a href="#">Home 01</a></li>
 											<li><a href="#">Home 02</a></li>
 											<li><a href="#">Home 03</a></li>
-											<li id="headerversion"><a href="#">Header Versions</a></li>
-												<ul class="headerVersions_menu">
-													<li><a href="#">Header 01</a></li>
-													<li><a href="#">Header 02</a></li>
-													<li><a href="#">Header 03</a></li>
-												</ul>
-											
+											<li id="headerversion">
+												<a href="#">Header Versions</a>
+											</li>
+											<ul class="headerVersions_menu">
+												<li><a href="#">Header 01</a></li>
+												<li><a href="#">Header 02</a></li>
+												<li><a href="#">Header 03</a></li>
+											</ul>
 										</ul>
 									</li>
-									<li><a href="#" data-bs-toggle="dropdown" class="dropdown-toggle">Pages</a>
+									<li>
+										<a
+											href="#"
+											data-bs-toggle="dropdown"
+											class="dropdown-toggle"
+											>Pages</a
+										>
 										<ul class="dropdown_menu">
 											<li><a href="#">About</a></li>
 											<li><a href="#">How It Works</a></li>
@@ -101,7 +125,13 @@
 											<li><a href="/contact.html">Contact</a></li>
 										</ul>
 									</li>
-									<li><a href="#" data-bs-toggle="dropdown" class="dropdown-toggle">Listings</a>
+									<li>
+										<a
+											href="#"
+											data-bs-toggle="dropdown"
+											class="dropdown-toggle"
+											>Listings</a
+										>
 										<ul class="dropdown_menu">
 											<li><a href="#">Listings-1</a></li>
 											<li><a href="#">Listings-2</a></li>
@@ -110,16 +140,24 @@
 										</ul>
 									</li>
 									<li><a href="#">Pricing</a></li>
-									<li><a href="#" data-bs-toggle="dropdown" class="dropdown-toggle">Blog</a>
+									<li>
+										<a
+											href="#"
+											data-bs-toggle="dropdown"
+											class="dropdown-toggle"
+											>Blog</a
+										>
 										<ul class="dropdown_menu">
 											<li><a href="/blog.html">Blog</a></li>
 											<li><a href="/blogDetail.html">Blog Details</a></li>
 										</ul>
 									</li>
-									<li style="margin-right: 0 !important;"><a href="/contact.html" >Contact</a></li>
+									<li style="margin-right: 0 !important">
+										<a href="/contact.html">Contact</a>
+									</li>
 								</ul>
 							</div>
-							
+
 							<div class="canvas_lowerContent">
 								<a class="emailid" href="#">needhelp@ziston.com</a>
 								<a class="numb" href="#">888 999 0000</a>
@@ -140,282 +178,374 @@
 									</ul>
 								</div>
 							</div>
-							</div>
 						</div>
-						<div class="nav_contents">
-							<div class="nav_menu">
-								<ul>
-									<li>
-										<a href="/index.html" data-bs-toggle="dropdown" class="dropdown-toggle">Home</a>
-										<ul class="dropdown_menu">
-											<li><a href="#">Home 01</a></li>
-											<li><a href="#">Home 02</a></li>
-											<li><a href="#">Home 03</a></li>
-											<li id="headerversion"><a href="#">Header Versions</a></li>
-												<ul class="headerVersions_menu">
-													<li><a href="#">Header 01</a></li>
-													<li><a href="#">Header 02</a></li>
-													<li><a href="#">Header 03</a></li>
-												</ul>
-											
-										</ul>
-									</li>
-									<li><a href="" data-bs-toggle="dropdown" class="dropdown-toggle">Pages</a>
-										<ul class="dropdown_menu">
-											<li><a href="#">About</a></li>
-											<li><a href="#">How It Works</a></li>
-											<li><a href="#">Top Authors</a></li>
-											<li><a href="/contact.html">Contact</a></li>
-										</ul>
-									</li>
-									<li><a href="" data-bs-toggle="dropdown" class="dropdown-toggle">Listings</a>
-										<ul class="dropdown_menu">
-											<li><a href="#">Listings-1</a></li>
-											<li><a href="#">Listings-2</a></li>
-											<li><a href="#">Listings-3</a></li>
-											<li><a href="#">Listings-Details</a></li>
-										</ul>
-									</li>
-									<li><a href="">Pricing</a></li>
-									<li><a href="#" data-bs-toggle="dropdown" class="dropdown-toggle">Blog</a>
-										<ul class="dropdown_menu">
-											<li><a href="/blog.html">Blog</a></li>
-											<li><a href="/blogDetail.html">Blog Details</a></li>
-										</ul>
-									</li>
-									<li style="margin-right: 0 !important;"><a href="/contact.html" >Contact</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="right_content">
+					</div>
+					<div class="nav_contents">
+						<div class="nav_menu">
 							<ul>
 								<li>
-									<a href=""><i class="far fa-search right_search"></i></a>
+									<a
+										href="/index.html"
+										data-bs-toggle="dropdown"
+										class="dropdown-toggle"
+										>Home</a
+									>
+									<ul class="dropdown_menu">
+										<li><a href="#">Home 01</a></li>
+										<li><a href="#">Home 02</a></li>
+										<li><a href="#">Home 03</a></li>
+										<li id="headerversion"><a href="#">Header Versions</a></li>
+										<ul class="headerVersions_menu">
+											<li><a href="#">Header 01</a></li>
+											<li><a href="#">Header 02</a></li>
+											<li><a href="#">Header 03</a></li>
+										</ul>
+									</ul>
 								</li>
 								<li>
-									<a href=""><i class="fal fa-shopping-cart right_cart"></i></a>
+									<a href="" data-bs-toggle="dropdown" class="dropdown-toggle"
+										>Pages</a
+									>
+									<ul class="dropdown_menu">
+										<li><a href="#">About</a></li>
+										<li><a href="#">How It Works</a></li>
+										<li><a href="#">Top Authors</a></li>
+										<li><a href="/contact.html">Contact</a></li>
+									</ul>
 								</li>
 								<li>
-									<button>
-										<a href=""><i class="fal fa-plus button_plus"></i>ADD LISTINGS</a>
-									</button>
+									<a href="" data-bs-toggle="dropdown" class="dropdown-toggle"
+										>Listings</a
+									>
+									<ul class="dropdown_menu">
+										<li><a href="#">Listings-1</a></li>
+										<li><a href="#">Listings-2</a></li>
+										<li><a href="#">Listings-3</a></li>
+										<li><a href="#">Listings-Details</a></li>
+									</ul>
+								</li>
+								<li><a href="">Pricing</a></li>
+								<li>
+									<a href="#" data-bs-toggle="dropdown" class="dropdown-toggle"
+										>Blog</a
+									>
+									<ul class="dropdown_menu">
+										<li><a href="/blog.html">Blog</a></li>
+										<li><a href="/blogDetail.html">Blog Details</a></li>
+									</ul>
+								</li>
+								<li style="margin-right: 0 !important">
+									<a href="/contact.html">Contact</a>
 								</li>
 							</ul>
 						</div>
-						
+					</div>
+					<div class="right_content">
+						<ul>
+							<li>
+								<a href=""><i class="far fa-search right_search"></i></a>
+							</li>
+							<li>
+								<a href=""><i class="fal fa-shopping-cart right_cart"></i></a>
+							</li>
+							<li>
+								<button>
+									<a href=""
+										><i class="fal fa-plus button_plus"></i>ADD LISTINGS</a
+									>
+								</button>
+							</li>
+						</ul>
 					</div>
 				</div>
-			</nav>
+			</div>
+		</nav>
 
-            <div class="blog_banner_wrapper">
-                <div class="blog_banner">
-                    <div class="blog_contents">
-                        <h2>Blog posts</h2>
-                        <ul>
-                            <li>
-                                <a href="/index.html">Home &nbsp</a>
-                            </li>
-                            <li>
-                                <span> &nbsp Blog Posts</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <section class="newsArticles_Wrap">
-				<div class="container" style="max-width: 1200px; padding: 0;">
-					<div class="row">
-                        <div class="newsBlogs d-flex px-0">
-                            <div class="col-md-4" style="padding: 0 15px;">
-                                <div class="blogs">
-                                    <div class="imageAndOverlay position-relative">
-                                        <img src="/images/blog-1-img-1.jpg" alt="">
-                                        <div class="imgoverlay"></div>
-                                    </div>
-                                        <div class="blogs_contents">
-                                            <div class="admin_comment">
-                                                <a href="#"><i class="far fa-user"></i>by Admin</a>
-                                                <a href="#" style="margin-left: 15px"><i class="fas fa-comments"></i>2 Comments</a>
-                                            </div>
-                                            <h3><a href="#">Top 8 Amazing Places to Stay in Canada</a></h3>
-                                            <p class="texts">Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum</p>
-                                            <div class="date">
-                                                <p>07 <br> Aug</p>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="padding: 0 15px;">
-                                <div class="blogs">
-                                    <div class="imageAndOverlay position-relative">
-                                        <img src="/images/blog-1-img-2.jpg" alt="">
-                                        <div class="imgoverlay"></div>
-                                    </div>
-                                    <div class="blogs_contents">
-                                        <div class="admin_comment">
-                                            <a href="#"><i class="far fa-user"></i>by Admin</a>
-                                            <a href="#" style="margin-left: 15px"><i class="fas fa-comments"></i>2 Comments</a>
-                                        </div>
-                                        <h3><a href="#">Leverage agile frameworks to provide a robust</a></h3>
-                                        <p class="texts">Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum</p>
-                                        <div class="date">
-                                                <p>07 <br> Aug</p>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="padding: 0 15px;">
-                                <div class="blogs">
-                                    <div class="imageAndOverlay position-relative">
-                                        <img src="/images/blog-1-img-3.jpg" alt="">
-                                    <div class="imgoverlay"></div>
-                                    </div>
-                                    <div class="blogs_contents">
-                                        <div class="admin_comment">
-                                            <a href="#"><i class="far fa-user"></i>by Admin</a>
-                                            <a href="#" style="margin-left: 15px"><i class="fas fa-comments"></i>2 Comments</a>
-                                        </div>
-                                        <h3><a href="#">Bring to the table win-win survival strategies to</a></h3>
-                                        <p class="texts">Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum</p>
-                                        <div class="date">
-                                                <p>07 <br> Aug</p>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="newsBlogs d-flex px-0">
-                            <div class="col-md-4" style="padding: 0 15px;">
-                                <div class="blogs" style="margin-bottom: 0;">
-                                    <div class="imageAndOverlay position-relative">
-                                        <img src="/images/blog-page-img-4.jpg" alt="">
-                                        <div class="imgoverlay"></div>
-                                    </div>
-                                        <div class="blogs_contents">
-                                            <div class="admin_comment">
-                                                <a href="#"><i class="far fa-user"></i>by Admin</a>
-                                                <a href="#" style="margin-left: 15px"><i class="fas fa-comments"></i>2 Comments</a>
-                                            </div>
-                                            <h3><a href="#">At the end of the day, going forward, a new normal</a></h3>
-                                            <p class="texts">Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum</p>
-                                            <div class="date">
-                                                <p>07 <br> Aug</p>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="padding: 0 15px;">
-                                <div class="blogs" style="margin-bottom: 0;">
-                                    <div class="imageAndOverlay position-relative">
-                                        <img src="/images/blog-page-img-5.jpg" alt="">
-                                        <div class="imgoverlay"></div>
-                                    </div>
-                                    <div class="blogs_contents">
-                                        <div class="admin_comment">
-                                            <a href="#"><i class="far fa-user"></i>by Admin</a>
-                                            <a href="#" style="margin-left: 15px"><i class="fas fa-comments"></i>2 Comments</a>
-                                        </div>
-                                        <h3><a href="#">Capitalize on low handing fruit to identity</a></h3>
-                                        <p class="texts">Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum</p>
-                                        <div class="date">
-                                                <p>07 <br> Aug</p>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="padding: 0 15px;">
-                                <div class="blogs" style="margin-bottom: 0;">
-                                    <div class="imageAndOverlay position-relative">
-                                        <img src="/images/blog-page-img-6.jpg" alt="">
-                                    <div class="imgoverlay"></div>
-                                    </div>
-                                    <div class="blogs_contents">
-                                        <div class="admin_comment">
-                                            <a href="#"><i class="far fa-user"></i>by Admin</a>
-                                            <a href="#" style="margin-left: 15px"><i class="fas fa-comments"></i>2 Comments</a>
-                                        </div>
-                                        <h3><a href="#">DevOps. Nanotechnology immersion along</a></h3>
-                                        <p class="texts">Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum</p>
-                                        <div class="date">
-                                            <p>07 <br> Aug</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+		<div class="blog_banner_wrapper">
+			<div class="blog_banner">
+				<div class="blog_contents">
+					<h2>Blog posts</h2>
+					<ul>
+						<li>
+							<a href="/index.html">Home &nbsp</a>
+						</li>
+						<li>
+							<span> &nbsp Blog Posts</span>
+						</li>
+					</ul>
 				</div>
+			</div>
+		</div>
+
+		<section class="newsArticles_Wrap">
+			<div class="container" style="max-width: 1200px; padding: 0">
+				<div class="row">
+					<div class="newsBlogs d-flex px-0">
+						<div class="col-md-4" style="padding: 0 15px">
+							<div class="blogs">
+								<div class="imageAndOverlay position-relative">
+									<img src="/images/blog-1-img-1.jpg" alt="" />
+									<div class="imgoverlay"></div>
+								</div>
+								<div class="blogs_contents">
+									<div class="admin_comment">
+										<a href="#"><i class="far fa-user"></i>by Admin</a>
+										<a href="#" style="margin-left: 15px"
+											><i class="fas fa-comments"></i>2 Comments</a
+										>
+									</div>
+									<h3>
+										<a href="#">Top 8 Amazing Places to Stay in Canada</a>
+									</h3>
+									<p class="texts">
+										Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci
+										phaedrum
+									</p>
+									<div class="date">
+										<p>
+											07 <br />
+											Aug
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4" style="padding: 0 15px">
+							<div class="blogs">
+								<div class="imageAndOverlay position-relative">
+									<img src="/images/blog-1-img-2.jpg" alt="" />
+									<div class="imgoverlay"></div>
+								</div>
+								<div class="blogs_contents">
+									<div class="admin_comment">
+										<a href="#"><i class="far fa-user"></i>by Admin</a>
+										<a href="#" style="margin-left: 15px"
+											><i class="fas fa-comments"></i>2 Comments</a
+										>
+									</div>
+									<h3>
+										<a href="#"
+											>Leverage agile frameworks to provide a robust</a
+										>
+									</h3>
+									<p class="texts">
+										Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci
+										phaedrum
+									</p>
+									<div class="date">
+										<p>
+											07 <br />
+											Aug
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4" style="padding: 0 15px">
+							<div class="blogs">
+								<div class="imageAndOverlay position-relative">
+									<img src="/images/blog-1-img-3.jpg" alt="" />
+									<div class="imgoverlay"></div>
+								</div>
+								<div class="blogs_contents">
+									<div class="admin_comment">
+										<a href="#"><i class="far fa-user"></i>by Admin</a>
+										<a href="#" style="margin-left: 15px"
+											><i class="fas fa-comments"></i>2 Comments</a
+										>
+									</div>
+									<h3>
+										<a href="#"
+											>Bring to the table win-win survival strategies to</a
+										>
+									</h3>
+									<p class="texts">
+										Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci
+										phaedrum
+									</p>
+									<div class="date">
+										<p>
+											07 <br />
+											Aug
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="newsBlogs d-flex px-0">
+						<div class="col-md-4" style="padding: 0 15px">
+							<div class="blogs" style="margin-bottom: 0">
+								<div class="imageAndOverlay position-relative">
+									<img src="/images/blog-page-img-4.jpg" alt="" />
+									<div class="imgoverlay"></div>
+								</div>
+								<div class="blogs_contents">
+									<div class="admin_comment">
+										<a href="#"><i class="far fa-user"></i>by Admin</a>
+										<a href="#" style="margin-left: 15px"
+											><i class="fas fa-comments"></i>2 Comments</a
+										>
+									</div>
+									<h3>
+										<a href="#"
+											>At the end of the day, going forward, a new normal</a
+										>
+									</h3>
+									<p class="texts">
+										Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci
+										phaedrum
+									</p>
+									<div class="date">
+										<p>
+											07 <br />
+											Aug
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4" style="padding: 0 15px">
+							<div class="blogs" style="margin-bottom: 0">
+								<div class="imageAndOverlay position-relative">
+									<img src="/images/blog-page-img-5.jpg" alt="" />
+									<div class="imgoverlay"></div>
+								</div>
+								<div class="blogs_contents">
+									<div class="admin_comment">
+										<a href="#"><i class="far fa-user"></i>by Admin</a>
+										<a href="#" style="margin-left: 15px"
+											><i class="fas fa-comments"></i>2 Comments</a
+										>
+									</div>
+									<h3>
+										<a href="#">Capitalize on low handing fruit to identity</a>
+									</h3>
+									<p class="texts">
+										Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci
+										phaedrum
+									</p>
+									<div class="date">
+										<p>
+											07 <br />
+											Aug
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4" style="padding: 0 15px">
+							<div class="blogs" style="margin-bottom: 0">
+								<div class="imageAndOverlay position-relative">
+									<img src="/images/blog-page-img-6.jpg" alt="" />
+									<div class="imgoverlay"></div>
+								</div>
+								<div class="blogs_contents">
+									<div class="admin_comment">
+										<a href="#"><i class="far fa-user"></i>by Admin</a>
+										<a href="#" style="margin-left: 15px"
+											><i class="fas fa-comments"></i>2 Comments</a
+										>
+									</div>
+									<h3>
+										<a href="#">DevOps. Nanotechnology immersion along</a>
+									</h3>
+									<p class="texts">
+										Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci
+										phaedrum
+									</p>
+									<div class="date">
+										<p>
+											07 <br />
+											Aug
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section class="upperFooter">
-			
-				<div class="footerImage">
-					<img src="/images/footer-shape-1.png" alt="">
-				</div>
-				<div class="footerMap"></div>
-					<div class="footerContent_Wrapper">
-						<div class="container">
-							<div class="row">
-							<div class="col-md-4">
-								<div class="leftContents">
-									<div class="footer_logo">
-										<img src="/images/footer-logo.png" alt="footer logo">
-										<p class="footerText">Lorem ipsum dolor sit amet consect etur adi pisicing elit sed do eiusmod tempor incididunt ut labore</p>
-										<div class="footer_lowerLeftContent">
-											<i class="fad fa-mobile"></i>
-											<div class="phnNumber">
-												<p>Phone</p>
-												<a href="">92 666 888 0000</a>
-											</div>
-										</div>
+			<div class="footerImage">
+				<img src="/images/footer-shape-1.png" alt="" />
+			</div>
+			<div class="footerMap"></div>
+			<div class="footerContent_Wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 leftContents">
+							<!-- <div class="leftContents"> -->
+							<!-- <div class="footer_logo"> -->
+							<div class="logo_and_phone">
+								<img src="/images/footer-logo.png" alt="footer logo" />
+								<div class="footerText">
+									<p>
+										Lorem ipsum dolor sit amet consect etur adi pisicing elit
+										sed do eiusmod tempor incididunt ut labore
+									</p>
+								</div>
+								>
+								<div class="footer_lowerLeftContent">
+									<i class="fad fa-mobile"></i>
+									<div class="phnNumber">
+										<p>Phone</p>
+										<a href="">92 666 888 0000</a>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4 ">
-								<div class="exploreCategories_wrapper">
-									<div class="col-md-6 explore">
-										<div class="footer_explore">
-											<h3>Explore</h3>
-											<ul class="footer_exploreLists">
-												<li><a href="#">About Us</a></li>
-												<li><a href="#">My Account</a></li>
-												<li><a href="#">My Listings</a></li>
-												<li><a href="#">Pricing Packages</a></li>
-												<li><a href="#">User Dashboard</a></li>
-												<li><a href="#">Bookmarks</a></li>
-											</ul>
-										</div>
-									</div><div class="col-md-6 category">
-										<div class="footer_categories">
-											<h3>Categories</h3>
-											<ul class="footer_categoryLists">
-												<li><a href="#">Restaurant</a></li>
-												<li><a href="#">Culture</a></li>
-												<li><a href="#">Shopping</a></li>
-												<li><a href="#">Beauty</a></li>
-												<li><a href="#">Hotels</a></li>
-												<li><a href="#">Hospitals</a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 ">
-								<div class="footer_rightContents">
-									<h3>Newsletter</h3>
-									<ul class="footer_address">
-										<li>
-											88 Broklyn Golden Street. New York. USA
-										</li>
-										<li>
-											<a href="#">needhelp@ziston.com</a>
-										</li>
+							<!-- </div> -->
+							<!-- </div> -->
+						</div>
+						<div class="col-md-2">
+							<div class="explore">
+								<div class="footer_explore">
+									<h3>Explore</h3>
+									<ul class="footer_exploreLists">
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">My Account</a></li>
+										<li><a href="#">My Listings</a></li>
+										<li><a href="#">Pricing Packages</a></li>
+										<li><a href="#">User Dashboard</a></li>
+										<li><a href="#">Bookmarks</a></li>
 									</ul>
-									<div class="email_button">
-										<input class="footer_email" type="text" placeholder="Enter email address">
-										<button class="sub_button"><i class="fab fa-telegram-plane"></i>SUBSCRIBE</button>
-									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 category">
+							<div class="footer_categories">
+								<h3>Categories</h3>
+								<ul class="footer_categoryLists">
+									<li><a href="#">Restaurant</a></li>
+									<li><a href="#">Culture</a></li>
+									<li><a href="#">Shopping</a></li>
+									<li><a href="#">Beauty</a></li>
+									<li><a href="#">Hotels</a></li>
+									<li><a href="#">Hospitals</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="footer_rightContents">
+								<h3>Newsletter</h3>
+								<ul class="footer_address">
+									<li>88 Broklyn Golden Street. New York. USA</li>
+									<li>
+										<a href="#">needhelp@ziston.com</a>
+									</li>
+								</ul>
+								<div class="email_button">
+									<input
+										class="footer_email"
+										type="text"
+										placeholder="Enter email address"
+									/>
+									<button class="sub_button">
+										<i class="fab fa-telegram-plane"></i>SUBSCRIBE
+									</button>
 								</div>
 							</div>
 						</div>
@@ -431,7 +561,7 @@
 						<p>© Copyright 2020 by <strong>Layerdrops.com</strong></p>
 					</div>
 					<div class="footer_socialMedia">
-						<a href="#"><i class="fab fa-twitter"></i></a>								
+						<a href="#"><i class="fab fa-twitter"></i></a>
 						<a href="#"><i class="fab fa-facebook"></i></a>
 						<a href="#"><i class="fab fa-pinterest"></i></a>
 						<a href="#"><i class="fab fa-youtube"></i></a>
@@ -439,14 +569,6 @@
 				</div>
 			</div>
 		</section>
-		
-
-
-		
-
-
-
-		
 
 		<button id="myBtn" onclick="topFunction()">
 			<i class="fal fa-chevron-up"></i>

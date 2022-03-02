@@ -1,6 +1,6 @@
 .newsArticles_Wrap {
 	position: relative;
-	top: 375px;
+	top: 382px !important;
 	padding: 120px 90px;
 }
 
@@ -20,5 +20,15 @@
 
 	.newsArticles_Wrap .container {
 		max-width: 540px !important;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.newsArticles_Wrap .container {
+		max-width: 100% !important;
+	}
+
+	.newsArticles_Wrap {
+		padding: 120px 15px 90px;
 	}
 }

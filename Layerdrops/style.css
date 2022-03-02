@@ -1812,32 +1812,36 @@ a.showMore:hover {
 }
 
 .leftContents {
-	position: absolute;
+	/* position: relative; */
 	padding: 0 15px;
+	z-index: 1;
 }
 
-.footer_logo .footerText {
+.logo_and_phone {
+	margin-right: 70px;
+}
+
+.footerText p {
 	color: #959ca7;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 34px;
 	font-family: "Barlow", sans-serif;
 	text-align: left;
-	width: 42%;
+	width: fit-content;
 	padding: 28px 0 29px;
 	margin: 0 0 40px;
 	border-bottom: 1px solid rgba(239, 240, 241, 0.1);
 }
 
 .footerContent_Wrapper {
-	display: flex;
+	/* display: flex; */
 	width: 100%;
-	height: fit-content;
+	/* height: fit-content; */
 }
 
 .footer_lowerLeftContent {
 	display: flex;
-	width: 42%;
 	margin: 0 !important;
 }
 
@@ -1847,7 +1851,6 @@ a.showMore:hover {
 	font-weight: 400;
 	line-height: 25px;
 	font-family: "Barlow", sans-serif;
-	/* text-align: left; */
 	letter-spacing: 2.8px;
 	text-transform: uppercase;
 	margin: 0;
@@ -1887,7 +1890,7 @@ a.showMore:hover {
 }
 
 .category {
-	margin-left: 50px;
+	margin-right: 82px;
 }
 
 ul.footer_exploreLists,
@@ -2767,7 +2770,7 @@ button.sub_button:hover {
 		top: 11060px;
 	}
 	.footer {
-		top: 11880px;
+		top: 12452px;
 	}
 
 	.footer_contents {
