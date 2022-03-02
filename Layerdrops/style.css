@@ -2248,18 +2248,6 @@ button.sub_button:hover {
 		height: 250vh !important;
 	}
 
-	/* .dropdown_categories {
-		position: absolute;
-		top: 66px;
-		left: 16px;
-	}
-
-	.input_section input,
-	.dropdown_location select.select_options,
-	.dropdown_categories select.select_options {
-		padding: 0 30px;
-	} */
-
 	.banner_bottom_contents {
 		top: 190vh;
 	}
@@ -2468,11 +2456,11 @@ button.sub_button:hover {
 	}
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
 	.container {
 		max-width: 720px !important;
 	}
-}
+} */
 
 @media screen and (max-width: 767px) {
 	#myBtn {
@@ -2808,16 +2796,64 @@ button.sub_button:hover {
 	#myBtn {
 		right: 40px;
 	}
+
+	.client_testimonies {
+		flex-direction: column;
+	}
 }
 
-@media screen and (max-width: 1322px) {
+/* @media screen and (max-width: 1322px) {
 	.right_content ul li button a {
 		line-height: 55px;
 	}
-}
+} */
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
 	.container {
 		max-width: 540px !important;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.slider_contents {
+		width: 360px;
+		margin: 0 auto;
+	}
+
+	.boxcol {
+		padding: 0px !important;
+	}
+
+	.fourBoxes .container {
+		overflow: hidden;
+	}
+
+	.half_circle {
+		display: none;
+	}
+	.client_testimonies {
+		flex-direction: column;
+	}
+
+	.foodlovers_section {
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 492px) {
+	.slider .left_arrow {
+		display: none;
+	}
+
+	.slider .right_arrow {
+		display: none;
 	}
 }

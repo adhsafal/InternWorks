@@ -65,11 +65,19 @@
 						<div class="nav_logo">
 							<a href="/index.html"><img src="images/logo.png" alt="logo"></a>
 						</div>
-						<div class="nav_contents">
-							<div class="nav_menu">
+						<div class="canvas">
+							<div class="responsive_navbar_icon">
+								<a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+								  <i class="fal fa-bars"></i>
+								</a>
+							</div>
+							
+							<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">	
+								<a href=""><i class="fal fa-times"></i></a>
+								<div class="canvas_menu">
 								<ul>
 									<li>
-										<a href="" data-bs-toggle="dropdown" class="dropdown-toggle">Home</a>
+										<a href="/index.html" data-bs-toggle="dropdown" class="dropdown-toggle">Home</a>
 										<ul class="dropdown_menu">
 											<li><a href="#">Home 01</a></li>
 											<li><a href="#">Home 02</a></li>
@@ -83,15 +91,15 @@
 											
 										</ul>
 									</li>
-									<li><a href="" data-bs-toggle="dropdown" class="dropdown-toggle">Pages</a>
+									<li><a href="#" data-bs-toggle="dropdown" class="dropdown-toggle">Pages</a>
 										<ul class="dropdown_menu">
 											<li><a href="#">About</a></li>
 											<li><a href="#">How It Works</a></li>
 											<li><a href="#">Top Authors</a></li>
-											<li><a href="#">Contact</a></li>
+											<li><a href="/contact.html">Contact</a></li>
 										</ul>
 									</li>
-									<li><a href="" data-bs-toggle="dropdown" class="dropdown-toggle">Listings</a>
+									<li><a href="#" data-bs-toggle="dropdown" class="dropdown-toggle">Listings</a>
 										<ul class="dropdown_menu">
 											<li><a href="#">Listings-1</a></li>
 											<li><a href="#">Listings-2</a></li>
@@ -99,7 +107,7 @@
 											<li><a href="#">Listings-Details</a></li>
 										</ul>
 									</li>
-									<li><a href="">Pricing</a></li>
+									<li><a href="#">Pricing</a></li>
 									<li><a href="#" data-bs-toggle="dropdown" class="dropdown-toggle">Blog</a>
 										<ul class="dropdown_menu">
 											<li><a href="/blog.html">Blog</a></li>
@@ -109,32 +117,31 @@
 									<li style="margin-right: 0 !important;"><a href="/contact.html" >Contact</a></li>
 								</ul>
 							</div>
-						</div>
-						<div class="right_content">
-							<ul>
-								<li>
-									<a href=""><i class="far fa-search right_search"></i></a>
-								</li>
-								<li>
-									<a href=""><i class="fal fa-shopping-cart right_cart"></i></a>
-								</li>
-								<li>
-									<button>
-										<a href=""><i class="fal fa-plus button_plus"></i>ADD LISTINGS</a>
-									</button>
-								</li>
-							</ul>
-						</div>	
-						<div class="canvas">
-							<div class="responsive_navbar_icon">
-								<a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-								  <i class="fal fa-bars"></i>
-								</a>
-							</div>
 							
-							<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">	
-								<a href=""><i class="fal fa-times"></i></a>
-								<div class="canvas_menu">
+							<div class="canvas_lowerContent">
+								<a class="emailid" href="#">needhelp@ziston.com</a>
+								<a class="numb" href="#">888 999 0000</a>
+								<div class="canvas_socialMedia">
+									<ul>
+										<li>
+											<i class="fab fa-twitter"></i>
+										</li>
+										<li>
+											<i class="fab fa-facebook"></i>
+										</li>
+										<li>
+											<i class="fab fa-pinterest"></i>
+										</li>
+										<li>
+											<i class="fab fa-youtube"></i>
+										</li>
+									</ul>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="nav_contents">
+							<div class="nav_menu">
 								<ul>
 									<li>
 										<a href="/index.html" data-bs-toggle="dropdown" class="dropdown-toggle">Home</a>
@@ -177,29 +184,23 @@
 									<li style="margin-right: 0 !important;"><a href="/contact.html" >Contact</a></li>
 								</ul>
 							</div>
-							
-							<div class="canvas_lowerContent">
-								<a class="emailid" href="#">needhelp@ziston.com</a>
-								<a class="numb" href="#">888 999 0000</a>
-								<div class="canvas_socialMedia">
-									<ul>
-										<li>
-											<i class="fab fa-twitter"></i>
-										</li>
-										<li>
-											<i class="fab fa-facebook"></i>
-										</li>
-										<li>
-											<i class="fab fa-pinterest"></i>
-										</li>
-										<li>
-											<i class="fab fa-youtube"></i>
-										</li>
-									</ul>
-								</div>
-							</div>
-							</div>
 						</div>
+						<div class="right_content">
+							<ul>
+								<li>
+									<a href=""><i class="far fa-search right_search"></i></a>
+								</li>
+								<li>
+									<a href=""><i class="fal fa-shopping-cart right_cart"></i></a>
+								</li>
+								<li>
+									<button>
+										<a href=""><i class="fal fa-plus button_plus"></i>ADD LISTINGS</a>
+									</button>
+								</li>
+							</ul>
+						</div>
+						
 					</div>
 				</div>
 			</nav>
